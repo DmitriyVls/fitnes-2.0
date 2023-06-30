@@ -1,0 +1,134 @@
+.hero {
+  display: flex;
+  align-items: flex-end;
+}
+
+.hero__picture {
+  order: 2;
+}
+
+.hero__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 64px;
+}
+
+.hero__promo {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.hero__offer {
+  order: -1;
+  margin-bottom: 12px;
+}
+
+.hero__button-wrapper {
+  width: 100%;
+}
+
+.hero__main-title {
+  max-width: 298px;
+  font-size: 92px;
+  font-weight: 600;
+  line-height: 110px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $color-default-white;
+  text-align: right;
+  margin: 0;
+
+  &::before {
+    content: "Омск";
+      width: 133px;
+      font-size: 48px;
+      font-weight: 600;
+      line-height: 58px;
+      letter-spacing: 0.03em;
+      margin-right: 64px;
+      margin-bottom: 25px;
+    }
+}
+
+.hero__item {
+  font-family: "Roboto Condensed", "Arial, sanse serif";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: right;
+  color: $color-default-white;
+}
+
+.hero__button-wrapper {
+  text-align: right;
+  margin-top: 80px;
+}
+
+//TABLET
+  @media (max-width:$vp-1199) {
+    .hero {
+      margin-top: 25px;
+    }
+
+    .hero__picture {
+      margin-left: auto;
+    }
+
+    .hero__text-wrapper {
+      margin-right: 30px;
+    }
+
+    .hero__main-title {
+      max-width: 200px;
+      font-size: 72px;
+      line-height: 86px;
+
+      &::before {
+        font-size: 34px;
+        line-height: 41px;
+      }
+    }
+
+    .hero__button-wrapper {
+      margin-top: 60px;
+    }
+  }
+//TABLET
+
+//MOBILE
+@media (max-width:$vp-767) {
+  .hero__picture {
+    display: none;
+  }
+
+  .hero__text-wrapper {
+    width: 100%;
+    margin: 0;
+    position: relative;
+  }
+
+  .hero__promo {
+    flex-wrap: nowrap;
+  }
+
+  .hero__main-title {
+    &::before {
+      margin: 0;
+    }
+  }
+
+  .hero__offer {
+    width: 113px;
+    position: absolute;
+    top: 170px;
+    left: 0;
+  }
+
+  .hero__button-wrapper {
+    max-width: 100%;
+  }
+}
+//MOBILE

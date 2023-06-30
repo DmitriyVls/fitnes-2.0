@@ -1,0 +1,16 @@
+.social__item {
+  margin-right: 11px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  background-color: $color-default-white;
+}

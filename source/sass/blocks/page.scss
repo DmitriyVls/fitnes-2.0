@@ -1,0 +1,10 @@
+.page {
+  height: 100%;
+}
+
+.page__body {
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
