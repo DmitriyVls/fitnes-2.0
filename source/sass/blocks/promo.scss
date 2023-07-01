@@ -1,0 +1,23 @@
+.promo__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.promo__picture {
+  margin-right: auto;
+}
+
+.promo__link {
+  display: block;
+}
+
+.promo__text-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.time-data__wrapper {
+  display: flex;
+  flex-direction: column;
+}

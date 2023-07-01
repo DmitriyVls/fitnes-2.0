@@ -1,17 +1,20 @@
 .container{
-  max-width: 1160;
+  max-width: 1160px;
   margin: 0 auto;
-  padding: 0 103px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+
 }
 
-@media (max-width:1199px) {
+@media (max-width:$vp-1199) {
   .container{
-    padding: 0 45px;
+    padding: 100px 45px;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width:$vp-767) {
   .container{
-    padding: 0 15px;
+    padding: 70px 15px;
+    margin: 0 auto;
   }
 }

@@ -1,0 +1,42 @@
+.about__wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.about__description {
+  max-width: 32%;
+}
+
+//TABLET
+@media (max-width:$vp-1199) {
+  .about__wrapper {
+    display: block;
+  }
+
+  .about__description {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .about__picture {
+    display: flex;
+    justify-content: center;
+  }
+}
+//TABLET
+
+//MOBILE
+@media (max-width:$vp-767) {
+  .about__content {
+    .container{
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  .about__wrapper {
+    margin: 0 auto;
+  }
+}
+//MOBILE

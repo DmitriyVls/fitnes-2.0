@@ -76,6 +76,23 @@
   text-transform: uppercase;
 }
 
+.bold-text {
+  display: block;
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 58px;
+  letter-spacing: 0.03em;
+}
+
+.text {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  color: $color-sapphire;
+}
+
 //TABLET
 @media (max-width: $vp-1199) {
   .text-logo {

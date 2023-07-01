@@ -49,6 +49,14 @@
   display: none;
 }
 
+//TABLET
+@media (max-width:$vp-1199) {
+  .footer__item  {
+    margin-right: 30px;
+  }
+}
+//TABLET
+
 //MOBILE
 @media (max-width:$vp-767) {
   .footer__list {
@@ -71,6 +79,8 @@
 
   .footer__link {
     padding-left: 0;
+    font-size: 16px;
+    line-height: 19px;
   }
 }
 //MOBILE

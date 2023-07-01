@@ -1,9 +1,13 @@
 .header__content {
   background: url(/img/jpeg/header-bg.jpg) no-repeat,
-        linear-gradient(-160deg, #003D85 40%, #B80027 100%);
+        linear-gradient(-160deg, $color-dark-cerulean 40%, $color-venetian-red 100%);
   background-size: cover;
   width: 100%;
   min-height: 658px;
+
+  .container {
+    padding-top: 0;
+  }
 }
 
 .header__top {
@@ -31,6 +35,10 @@
   .header__content {
     padding-top: 40px;
     min-height: 554px;
+
+    .container {
+      padding-top: 0;
+    }
   }
 
   .header__link {
@@ -45,8 +53,12 @@
 //MOBILE
 @media (max-width:$vp-767) {
   .header__content {
-    padding-top: 15px;
     min-height: 491px;
+    padding-top: 15px;
+
+    .container {
+      padding-top: 0;
+    }
   }
 
   .header__link {

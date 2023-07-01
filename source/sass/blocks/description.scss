@@ -1,0 +1,32 @@
+.description__bold-text {
+  margin-bottom: 55px;
+  &::after {
+    content: "Просторный зал площадью 900 кв/м";
+    display: block;
+    margin-top: 25px;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+  }
+}
+
+.about__picture {
+  margin-left: auto;
+}
+
+.descriprion__text {
+  margin-bottom: 10px;
+}
+
+//TABLET
+@media (max-width:$vp-1199) {
+  .description {
+    text-align: center;
+  }
+
+  .descriprion__text-additional {
+    display: none;
+  }
+}
+//TABLET
