@@ -76,6 +76,15 @@
   text-transform: uppercase;
 }
 
+.title {
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 65px;
+  letter-spacing: 0.03em;
+  color: $color-sapphire;
+}
+
 .bold-text {
   display: block;
   font-family: "Alumni Sans", "Arial", sans-serif;

@@ -119,17 +119,91 @@
 
       <section class="offer">
         <div class="offer__content">
-          <div class="offer__wrapper conteiner">
+          <div class="offer__wrapper container " data-tabs="parent">
             <h2 class="offer__title title">
               Абонементы
             </h2>
 
-            <div class="offer__cart cart">
-              <div class="cart__wrapper">
-                <div class="cart__tabs tabs">
-                  <label></label>
-                </div>
+            <div class="offer__tabs tabs" data-tabs="controls">
+              <div class="tabs__controls" data-tabs="controls">
+                <button class="tabs__control is-active" data-tabs="control" data-index="0">1 месяц</button>
+                <button class="tabs__control" data-tabs="control" data-index="0">6 месяцев</button>
+                <button class="tabs__control" data-tabs="control" data-index="0">12 месяцев</button>
               </div>
+              <div class="tabs__content" data-tabs="content">
+                <div class="tabs__element is-active" data-tabs="element">
+                  <div class="tabs__item">
+                    <a class="tabs__link-card link-card" href="#" >
+                      <b class="link-card__bold">
+                        C тренером
+                      </b>
+
+                      <span class="link-card__time">12 занятий</span>
+
+                      <p class="link-card__price">
+                        5000 	<span class="link-symbol">&#8381</span>
+
+                        <span class="link-card__duplicate">5000</span>
+                      </p>
+
+                    </a>
+
+                    <button class="tabs__button button" type="button">
+                      Купить абонемент
+                    </button>
+                  </div>
+
+                  <div class="tabs__item">
+                    <a class="tabs__link-card link-card" href="#" >
+                      <b class="link-card__bold">
+                        C тренером
+                      </b>
+
+                      <span class="link-card__time">12 занятий</span>
+
+                      <p class="link-card__price">
+                        5000 	<span class="link-symbol">&#8381</span>
+
+                        <span class="link-card__duplicate">5000</span>
+                      </p>
+
+                    </a>
+
+                    <button class="tabs__button button" type="button">
+                      Купить абонемент
+                    </button>
+                  </div>
+
+                  <div class="tabs__item">
+                    <a class="tabs__link-card link-card" href="#" >
+                      <b class="link-card__bold">
+                        C тренером
+                      </b>
+
+                      <span class="link-card__time">12 занятий</span>
+
+                      <p class="link-card__price">
+                        5000 	<span class="link-symbol">&#8381</span>
+
+                        <span class="link-card__duplicate">5000</span>
+                      </p>
+
+                    </a>
+
+                    <button class="tabs__button button" type="button">
+                      Купить абонемент
+                    </button>
+                  </div>
+                </div>
+
+                <div class="tabs__element" data-tabs="element">
+                </div>
+
+                <div class="tabs__element" data-tabs="element">
+                </div>
+
+              </div>
+
             </div>
 
           </div>
@@ -263,5 +337,6 @@
       </div>
     </footer>
     <script src="js/main.js"></script>
+    <script src="js/init-tabs.js"></script>
   </body>
 </html>

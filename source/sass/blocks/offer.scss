@@ -1,0 +1,29 @@
+.offer {
+  position: relative;
+  z-index: 5;
+}
+
+.offer__content {
+  background: url("/img/png/offer-bg.png") 100% 130%,
+        $color-ghost-white;
+  background-repeat: no-repeat;
+}
+
+.offer__title {
+text-align: center;
+margin: 0;
+margin-bottom: 25px;
+}
+
+@media (max-width: $vp-1199) {
+  .offer__content {
+    background-image: url("/img/png/offer-bg-tablet.png");
+    background-position: 100% 100%;
+  }
+}
+
+@media (max-width: $vp-767) {
+  .offer__content {
+    background-image: none;
+  }
+}
