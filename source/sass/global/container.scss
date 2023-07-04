@@ -7,13 +7,17 @@
 
 @media (max-width:$vp-1199) {
   .container{
-    padding: 100px 45px;
+    max-width: 678px;
+    padding: 100px 0;
+    margin: 0 auto;
+
   }
 }
 
 @media (max-width:$vp-767) {
   .container{
-    padding: 70px 15px;
+    max-width: 290px;
+    padding: 70px 0;
     margin: 0 auto;
   }
 }

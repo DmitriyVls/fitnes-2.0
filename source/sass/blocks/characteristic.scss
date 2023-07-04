@@ -1,0 +1,42 @@
+.characteristic {
+  text-align: center;
+  padding-top: 38px;
+}
+
+.characteristic__apostrofe {
+  font-weight: 400;
+  color:$color-spindle;
+}
+
+.characteristic__list {
+  padding-top: 25px;
+  padding-left: 55px;
+}
+
+.characteristic__item {
+  max-width: 180px;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: $color-default-white;
+  position: relative;
+  padding-left: 16px;
+  margin-bottom: 24px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0,-50%);
+    width: 6px;
+    height: 6px;
+    background-color: $color-default-white;
+    border-radius: 100%;
+  }
+}

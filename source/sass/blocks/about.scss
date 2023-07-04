@@ -35,8 +35,11 @@
     }
   }
 
-  .about__wrapper {
-    margin: 0 auto;
+  .about__content{
+
+    .container {
+      max-width: none;
+    }
   }
 }
 //MOBILE
