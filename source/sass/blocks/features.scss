@@ -1,0 +1,41 @@
+.features__content {
+  background-color: $color-ghost-white;
+}
+
+.features__title {
+  text-align: center;
+}
+
+.features__container {
+  position: relative;
+}
+
+.features__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.features__item {
+  width: 340px;
+}
+
+//TABLET
+@media (max-width:$vp-1199) {
+  .features__list {
+    justify-content: space-between;
+  }
+}
+//TABLET
+
+//MOBILE
+@media (max-width:$vp-767) {
+  .features__content {
+    .container {
+      max-width: 320px;
+      margin: 0 auto;
+    }
+  }
+}
+//MOBILE
