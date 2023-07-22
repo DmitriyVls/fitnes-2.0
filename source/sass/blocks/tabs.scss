@@ -90,7 +90,6 @@
   margin-right: 40px;
   position: relative;
 
-
   &:last-child {
     margin-right: 0;
   }
@@ -113,6 +112,14 @@
 
 //TABLET
 @media (max-width: $vp-1199) {
+  .tabs__content {
+    padding-top: 15px;
+  }
+
+  .tabs__controls {
+    padding-top: 12px;
+  }
+
   .tabs__element {
     align-items: center;
     flex-direction: column;
@@ -121,11 +128,18 @@
   .tabs__item {
     width: 442px;
     margin-right: 0;
+    margin-bottom: 37px;
   }
 
   .tabs__control {
     font-size: 18px;
     line-height: 27px;
+    padding-bottom: 10px;
+  }
+
+  .tabs__button {
+    padding: 25px 0;
+    bottom: 40px;
   }
 }
 

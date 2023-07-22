@@ -25,10 +25,20 @@
 @media (max-width:$vp-1199) {
   .description {
     text-align: center;
+    padding-top: 0;
+    padding-left: 0;
   }
 
   .descriprion__text-additional {
     display: none;
+  }
+
+  .description__bold-text {
+    padding-bottom: 35px;
+
+    &::after {
+      margin-top: 0;
+    }
   }
 }
 //TABLET

@@ -11,10 +11,10 @@
 
 .reviews-slider__item {
   display: grid;
-  width: 560px;
+  max-width: 560px;
   grid-template-rows: 40px 90px;
-  grid-template-columns: 108px 328px;
-  align-self: start;
+  grid-template-columns: 25% 75%;
+  align-self: center;
   background-color: $color-resolution-blue;
   min-width: 0;
   padding: 62px;
@@ -47,21 +47,33 @@
 }
 
 @media (max-width:$vp-767) {
-  .reviews-slider__content {
-    width: 226px;
-    padding: 40px 25px;
+  .reviews-slider {
+    width: 300px;
   }
 
   .reviews-slider__wrapper {
     grid-template-rows: auto ;
     grid-template-columns: 68px auto;
     grid-template-rows: 40px auto;
+  }
 
+  .reviews-slider__content {
+    padding: 40px 25px;
+    padding: 0;
+  }
+
+  .reviews-slider__item {
+    max-width: none;
+    padding: 40px 25px;
+    width: 226px;
+    grid-template-rows: 68px 100%;
+    grid-template-columns: 80px 50%;
   }
 
   .reviews-slider__bold-text {
     max-width: 62px;
     margin-left: 15px;
+
   }
 
   .reviews-slider__text {

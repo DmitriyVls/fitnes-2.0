@@ -65,9 +65,13 @@
 //TABLET
 @media (max-width: $vp-1199) {
   .link-card__bold {
-    font-size: 42px;
-    line-height: 50px;
-    letter-spacing: 0.03em;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 29px;
+  }
+
+  .link-card__price {
+    padding-top: 70px;
   }
 }
 //TABLET
