@@ -1,0 +1,36 @@
+.info__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  position: relative;
+  max-width: 1160px;
+  margin: 0 auto;
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: $color-sapphire;
+    z-index: -1;
+    left: -50%;
+  }
+}
+
+//TABLET
+@media (max-width: $vp-1199) {
+  .info__wrapper {
+    flex-direction: column;
+    margin: 0;
+
+    &::before {
+      display: none;
+    }
+  }
+}
+//TABLET
+
+@media (max-width: $vp-767) {
+  .info__wrapper {
+  }
+}

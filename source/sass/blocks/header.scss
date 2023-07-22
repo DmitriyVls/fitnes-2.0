@@ -22,13 +22,14 @@
 }
 
 .header__link {
+  display: block;
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-size: 26px;
   font-weight: 600;
   line-height: 31px;
   letter-spacing: 0.03em;
   color: $color-default-white;
-}
+  }
 
 //TABLET
 @media (max-width:$vp-1199) {

@@ -5,11 +5,12 @@
 .trainers__title {
   max-width: 1160px;
   margin: 0 auto;
-  padding-bottom: 48px;
+  padding-bottom: 10px;
 }
 
 .trainers__slider {
-  max-width: 1200px;
+  max-width: 1300px;
+  width: 100%;
   margin: 0 auto;
   position: relative;
 }
@@ -19,12 +20,13 @@
   flex-wrap: wrap;
   max-width: 1160px;
   margin: 0 auto;
+  padding: 0;
   }
 
 .trainers__item {
   position: relative;
   margin-right: 40px;
-  margin-top: 10px;
+  margin-top: 30px;
 
   &:last-child {
     margin-right: 0;
@@ -34,7 +36,8 @@
 .trainers__link {
   display: block;
   width: 260px;
-  min-height: 294px;
+  min-height: 295px;
+  outline: none;
 
   &.mask {
     &::before {
@@ -95,7 +98,8 @@
   }
 
   .trainers__slider {
-    max-width: 678px;
+    max-width: 800px;
+    padding: 0;
   }
 
   .trainers__title {
@@ -105,6 +109,7 @@
 
   .trainers__list {
     max-width: 580px;
+    padding: 0;
   }
 
   .trainers__item {

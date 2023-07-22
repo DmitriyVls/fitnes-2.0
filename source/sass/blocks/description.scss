@@ -1,18 +1,20 @@
+.description {
+  padding-top: 15px;
+  padding-left: 60px;
+}
+
 .description__bold-text {
-  margin-bottom: 55px;
+  padding-bottom: 40px;
+
   &::after {
     content: "Просторный зал площадью 900 кв/м";
     display: block;
-    margin-top: 25px;
+    margin-top: 7px;
     font-family: "Roboto Condensed", "Arial", sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 27px;
   }
-}
-
-.about__picture {
-  margin-left: auto;
 }
 
 .descriprion__text {

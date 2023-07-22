@@ -126,6 +126,71 @@
   text-transform: uppercase;
   }
 
+  .button-dark-bg {
+    outline: none;
+
+    &:hover,
+    &:focus-visible {
+      background-color: $color-default-white;
+      color: $color-egyptian-blue;
+
+    }
+
+    &:active {
+      color: $color-default-black;
+    }
+
+    &:disabled {
+      opacity: 0.5;
+    }
+  }
+
+  .button-blue-bg {
+    outline: none;
+
+    &:hover,
+    &:focus-visible {
+      background: linear-gradient(to right, $color-torch-red, $color-cobalt);
+      color: $color-default-white;
+      border-color: inherit;
+    }
+
+    &:active {
+      background: linear-gradient(to right, $color-torch-red, $color-cobalt);
+      color: rgba(255, 255, 255, 0.5);
+      border-color: inherit;
+    }
+  }
+
+  .link-dark-bg,
+  .link-white-bg {
+    outline: none;
+    padding: 5px;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:focus-visible {
+      border: 2px solid $color-default-white;
+    }
+
+    &:active {
+      box-shadow: none;
+      opacity: 1;
+    }
+  }
+
+  .link-white-bg {
+    &:focus-visible {
+      border-color: $color-sapphire;
+    }
+  }
+
+  .is-disabled {
+    opacity: 0.5;
+  }
+
 //TABLET
 @media (max-width: $vp-1199) {
   .text-logo {
@@ -140,6 +205,12 @@
     letter-spacing: 0.05em;
     padding: 16px 0;
   }
+
+  .title {
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 50px;
+  }
 }
 //TABLET
 
@@ -149,6 +220,12 @@
     font-size: 20px;
     font-weight: 700;
     line-height: 24px;
+  }
+
+  .title {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 38px;
   }
 }
 //MODILE

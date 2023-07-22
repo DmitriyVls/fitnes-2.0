@@ -1,11 +1,21 @@
+.about__content {
+  .container {
+    padding-top: 75px;
+    padding-bottom: 210px;
+  }
+}
+
 .about__wrapper {
   display: flex;
-  align-items: center;
   position: relative;
 }
 
+.about__picture {
+  margin-left: auto;
+}
+
 .about__description {
-  max-width: 32%;
+  max-width: 37%;
 }
 
 //TABLET

@@ -2,9 +2,9 @@
   width: 364px;
   height: 228px;
   position: absolute;
-  top: 90%;
-  left: 50%;
-  transform: translate(-50%, -90%);
+  top: 75%;
+  left: 55%;
+  transform: translate(-55%, -75%);
 }
 
 .video__wrapper {
@@ -23,7 +23,6 @@
   background: linear-gradient(-290deg, $color-dark-cerulean 10%, $color-venetian-red 100%);
   border-radius: 100%;
   z-index: 15;
-  padding: 20px;
 
 }
 

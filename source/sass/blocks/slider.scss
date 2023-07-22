@@ -4,21 +4,26 @@
 }
 
 .slider__button {
+  display: block;
   border: none;
   background-color: inherit;
   position:  relative;
-  width: 16px;
-  height: 32px;
+  width: 56px;
+  height: 56px;
   padding: 0;
   cursor: pointer;
+  outline: none;
+  border-radius: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    width: 16px;
-    height: 2px;
-    background-color: $color-dark-gray;
+  &:hover,
+  &:focus {
+    border: 2px solid $color-sapphire;
+  }
+
+  &:active {
+    background-color: $color-sapphire;
   }
 
 }
@@ -32,34 +37,11 @@
 }
 
 .slider__button--left {
-
-  &::before {
-    transform: rotate(45deg);
-    bottom: 8px;
-    left: 0;
-}
-
-  &::after {
-    transform: rotate(-45deg);
-    top: 10px;
-    left: 0;
-  }
+  background-image: url("../img/svg/arrow-left.svg");
 }
 
 .slider__button--right {
-
-  &::before {
-    transform: rotate(135deg);
-    bottom: 8px;
-    right: 0;
-}
-
-  &::after {
-    transform: rotate(-135deg);
-    top: 10px;
-    right: 0;
-
-  }
+  background-image: url("../img/svg/arrow-right.svg");
 }
 
 @media (max-width:$vp-1199) {
@@ -69,11 +51,5 @@
 
   .slider__control--right {
     right: 0;
-  }
-}
-
-@media (max-width:$vp-767) {
-  .container{
-
   }
 }
