@@ -47,6 +47,7 @@
     position: static;
     transform:translate(0, 0);
     margin: 50px auto;
+    margin-bottom: 25px;
   }
 
   .main-feature__wrapper {
@@ -57,9 +58,15 @@
     font-size: 22px;
   }
 
+  .main-feature__bold-text {
+    padding-top: 10px;
+    line-height: 70px;
+  }
+
   .main-feature__text {
-    max-width: 172px;
+    max-width: 222px;
     margin: 0 auto;
+    padding-top: 7px;
   }
 }
 //TABLET

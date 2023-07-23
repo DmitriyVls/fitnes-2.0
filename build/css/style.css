@@ -2013,11 +2013,11 @@ button,
   width: 364px;
   height: 228px;
   position: absolute;
-  top: 130%;
+  top: 90%;
   left: 50%;
-  -webkit-transform: translate(-50%, -130%);
-      -ms-transform: translate(-50%, -130%);
-          transform: translate(-50%, -130%);
+  -webkit-transform: translate(-50%, -90%);
+      -ms-transform: translate(-50%, -90%);
+          transform: translate(-50%, -90%);
 }
 
 .video__wrapper {
@@ -2048,7 +2048,7 @@ button,
   .video {
     width: 266px;
     height: 167px;
-    top: 95%;
+    top: 87%;
   }
 }
 @media (max-width: 767px) {
@@ -2508,27 +2508,21 @@ button,
 }
 
 .trainers__slider {
-  max-width: 1300px;
-  width: 100%;
   margin: 0 auto;
   position: relative;
 }
 
 .trainers__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  max-width: 1160px;
-  margin: 0 auto;
   padding: 0;
+  margin: 0 auto;
+}
+.trainers__list .swiper-slide {
+  max-width: 100%;
 }
 
 .trainers__item {
   position: relative;
-  margin-right: 40px;
-  margin-top: 30px;
+  padding-top: 30px;
 }
 .trainers__item:last-child {
   margin-right: 0;
@@ -2581,6 +2575,10 @@ button,
   display: none;
 }
 
+.trainers__left {
+  left: -100px;
+}
+
 @media (max-width: 1199px) {
   .trainers__wrapper {
     padding-bottom: 100px;
@@ -2598,7 +2596,7 @@ button,
     padding: 0;
   }
   .trainers__item {
-    margin-right: 30px;
+    padding-top: 0;
   }
 }
 @media (max-width: 767px) {
@@ -2723,12 +2721,6 @@ button,
     color: #AFAFAF;
     font-size: 16px;
   }
-  .slider__control--left {
-    left: -5px;
-  }
-  .slider__control--right {
-    right: -5px;
-  }
   .slider__button {
     width: 32px;
     height: 32px;
@@ -2738,12 +2730,12 @@ button,
   background-color: #F8F9FC;
 }
 .features__content .container {
-  padding-top: 110px;
+  padding-top: 60px;
 }
 
 .features__title {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 27px;
 }
 
 .features__container {
@@ -2943,6 +2935,9 @@ button,
 }
 
 @media (max-width: 1199px) {
+  .promotions .container {
+    padding-top: 90px;
+  }
   .promotions__list {
     margin-left: 0;
     margin-top: 30px;
@@ -3008,6 +3003,7 @@ button,
         -ms-transform: translate(0, 0);
             transform: translate(0, 0);
     margin: 50px auto;
+    margin-bottom: 25px;
   }
   .main-feature__wrapper {
     padding-bottom: 45px;
@@ -3015,9 +3011,14 @@ button,
   .main-feature__apostrofe {
     font-size: 22px;
   }
+  .main-feature__bold-text {
+    padding-top: 10px;
+    line-height: 70px;
+  }
   .main-feature__text {
-    max-width: 172px;
+    max-width: 222px;
     margin: 0 auto;
+    padding-top: 7px;
   }
 }
 @media (max-width: 767px) {
@@ -3161,6 +3162,9 @@ button,
 .faq__content {
   background-color: #F8F9FC;
 }
+.faq__content .container {
+  padding-top: 80px;
+}
 
 .faq__wrapper {
   display: -webkit-box;
@@ -3193,9 +3197,6 @@ button,
   padding-top: 13px;
   padding-bottom: 13px;
   margin-bottom: 18px;
-}
-.faq__button:last-child {
-  margin-bottom: 0;
 }
 
 .faq__button--active {

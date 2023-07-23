@@ -1,5 +1,9 @@
 .faq__content {
   background-color: $color-ghost-white;
+
+  .container {
+    padding-top: 80px;
+  }
 }
 
 .faq__wrapper {
@@ -30,10 +34,6 @@
   padding-top: 13px;
   padding-bottom: 13px;
   margin-bottom: 18px;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
 }
 
 .faq__button--active {
