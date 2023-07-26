@@ -47,6 +47,12 @@
 
 //TABLET
 @media (max-width:$vp-1199) {
+  .features__content {
+    .container {
+      padding-top: 77px;
+    }
+  }
+
   .features__list {
     justify-content: space-between;
   }

@@ -66,6 +66,30 @@
     border: none;
   }
 
+  .contact__text-bold {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+
+  .contact__text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+  }
+
+  .contact__list {
+    margin-top: 25px;
+  }
+
+  .contact__links {
+
+    &::before {
+      content: "";
+      left: 10px;
+    }
+  }
+
   .contact__wrapper {
     max-width: 472px;
     margin: 0 auto;

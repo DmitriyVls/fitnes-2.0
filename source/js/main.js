@@ -21,3 +21,32 @@ new Swiper('.trainers__slider', {
     },
   },
 });
+
+const video = document.querySelector('.video');
+
+function setupVideo() {
+  let button = video.querySelector('.video__button');
+  let videoPrev = video.querySelector('.video__wrapper');
+  button.addEventListener('click', () => {
+    let iframe = createIframe();
+
+    videoPrev.remove();
+    button.remove();
+    video.appendChild(iframe);
+  });
+
+  video.classList.add('video--enabled');
+}
+
+function createIframe() {
+  let iframe = document.createElement('iframe');
+  iframe.setAttribute('allowfullscreen', '');
+  iframe.setAttribute('allow', 'autoplay');
+  iframe.setAttribute('src', 'https://www.youtube.com/embed/9TZXsZItgdw');
+
+  iframe.classList.add('video__media');
+
+  return iframe;
+}
+
+setupVideo();

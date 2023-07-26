@@ -1700,8 +1700,24 @@ button,
 }
 
 @media (max-width: 1199px) {
+  .footer {
+    margin-top: 5px;
+  }
+  .footer__logo {
+    margin: 0;
+  }
+  .footer__list {
+    margin-left: 0;
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    margin-left: 55px;
+  }
   .footer__item {
-    margin-right: 30px;
+    margin-right: 20px;
+  }
+  .footer__social {
+    margin-left: 25px;
   }
 }
 @media (max-width: 767px) {
@@ -2018,26 +2034,39 @@ button,
   -webkit-transform: translate(-50%, -90%);
       -ms-transform: translate(-50%, -90%);
           transform: translate(-50%, -90%);
+  background-image: url("../img/jpeg/video-preview.jpg");
 }
 
 .video__wrapper {
   position: relative;
+  width: 364px;
+  height: 228px;
+}
+
+.video__button-wrapper {
+  position: absolute;
+  z-index: 15;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .video__button {
   width: 72px;
   height: 72px;
   border: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   cursor: pointer;
   background: linear-gradient(-290deg, #003D85 10%, #B80027 100%);
   border-radius: 100%;
-  z-index: 15;
+}
+
+.video__media {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 25;
 }
 
 .video__button--hidden {
@@ -2049,6 +2078,11 @@ button,
     width: 266px;
     height: 167px;
     top: 87%;
+  }
+  .video__wrapper {
+    position: relative;
+    width: 266px;
+    height: 167px;
   }
 }
 @media (max-width: 767px) {
@@ -2062,6 +2096,9 @@ button,
     top: 0;
     left: 0;
     margin-top: 40px;
+  }
+  .video__wrapper {
+    width: 320px;
   }
 }
 .promo__wrapper {
@@ -2130,6 +2167,9 @@ button,
 }
 
 @media (max-width: 1199px) {
+  .promo__content .container {
+    padding-bottom: 85px;
+  }
   .promo__description {
     width: 292px;
     padding-top: 35px;
@@ -2508,24 +2548,24 @@ button,
 }
 
 .trainers__slider {
+  max-width: 1500px;
   margin: 0 auto;
   position: relative;
+  padding: 0;
+  padding: 0 50px;
 }
 
 .trainers__list {
-  padding: 0;
+  max-width: 1160px;
   margin: 0 auto;
 }
 .trainers__list .swiper-slide {
-  max-width: 100%;
+  max-width: 29%;
 }
 
 .trainers__item {
   position: relative;
   padding-top: 30px;
-}
-.trainers__item:last-child {
-  margin-right: 0;
 }
 
 .trainers__link {
@@ -2582,10 +2622,15 @@ button,
 @media (max-width: 1199px) {
   .trainers__wrapper {
     padding-bottom: 100px;
+    max-width: 1199px;
   }
   .trainers__slider {
     max-width: 800px;
+    margin: 0 auto;
     padding: 0;
+  }
+  .trainers__slider .swiper-slide {
+    max-width: 60%;
   }
   .trainers__title {
     text-align: center;
@@ -2779,6 +2824,9 @@ button,
 }
 
 @media (max-width: 1199px) {
+  .features__content .container {
+    padding-top: 77px;
+  }
   .features__list {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -3075,6 +3123,12 @@ button,
   border-bottom: 1px solid #ffffff;
 }
 
+@media (max-width: 1199px) {
+  .main-promotion__description {
+    padding-top: 10px;
+    padding-bottom: 182px;
+  }
+}
 @media (max-width: 767px) {
   .main-promotion__wrapper {
     display: block;
@@ -3124,7 +3178,8 @@ button,
   font-weight: 400;
   line-height: 22px;
   color: #102654;
-  padding-bottom: 65px;
+  padding-bottom: 35px;
+  padding-right: 75px;
 }
 
 .promotion__link {
@@ -3304,6 +3359,9 @@ button,
 }
 
 @media (max-width: 1199px) {
+  .faq__content .container {
+    padding-top: 105px;
+  }
   .faq__wrapper {
     display: block;
   }
@@ -3378,7 +3436,7 @@ button,
   position: relative;
   width: 700px;
   margin: 0 auto;
-  margin-top: 37px;
+  margin-top: 45px;
 }
 
 .reviews__title {
@@ -3397,7 +3455,7 @@ button,
       align-self: center;
   background-color: #1C3374;
   min-width: 0;
-  padding: 62px;
+  padding: 60px;
   margin: 0 auto;
 }
 
@@ -3590,6 +3648,7 @@ button,
   }
   .free-offer__fieldset {
     max-width: 206px;
+    margin-top: 40px;
   }
   .free-offer__wrapper {
     max-width: 472px;
@@ -3693,6 +3752,23 @@ button,
     margin: 0;
     padding: 70px 0;
     border: none;
+  }
+  .contact__text-bold {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+  .contact__text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+  }
+  .contact__list {
+    margin-top: 25px;
+  }
+  .contact__links::before {
+    content: "";
+    left: 10px;
   }
   .contact__wrapper {
     max-width: 472px;

@@ -54,8 +54,26 @@
 
 //TABLET
 @media (max-width:$vp-1199) {
+  .footer {
+    margin-top: 5px;
+  }
+
+  .footer__logo {
+    margin: 0;
+  }
+
+  .footer__list {
+    margin-left: 0;
+    flex-grow: 0;
+    margin-left: 55px;
+  }
+
   .footer__item  {
-    margin-right: 30px;
+    margin-right: 20px;
+  }
+
+  .footer__social {
+    margin-left: 25px;
   }
 }
 //TABLET

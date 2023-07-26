@@ -60,6 +60,12 @@
 
 //TABLET
 @media (max-width: $vp-1199) {
+  .promo__content {
+    .container {
+      padding-bottom: 85px;
+    }
+  }
+
   .promo__description {
     width: 292px;
     padding-top: 35px;

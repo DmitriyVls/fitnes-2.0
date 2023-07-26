@@ -147,6 +147,12 @@
 
 //TABLET
 @media (max-width: $vp-1199) {
+  .faq__content {
+    .container {
+      padding-top: 105px;
+    }
+  }
+
   .faq__wrapper {
     display: block;
   }
