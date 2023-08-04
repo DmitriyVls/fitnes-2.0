@@ -27,8 +27,8 @@
 
           <div class="header__hero hero">
             <picture class="hero__picture">
-              <source media="(max-width:1199px )" srcset="img/jpeg/header-promo-tablet.jpg" width="324" height="390">
-              <img class="header__image" src="img/jpeg/header-promo.jpg" alt="Промо изображение." width="500" height="556">
+              <source media="(max-width:1199px )" srcset="img/jpeg/header-promo-tablet.jpg 1x, img/jpeg/header-promo-tablet@2x 2x.jpg" width="324" height="390">
+              <img class="header__image" src="img/jpeg/header-promo.jpg" srcset="img/jpeg/header-promo@2x.jpg 2x" alt="Промо изображение." width="500" height="556">
             </picture>
             <div class="hero__text-wrapper">
               <div class="hero__promo">
@@ -89,24 +89,23 @@
             </div>
 
             <picture class="about__picture">
-              <source media="(max-width: 767px)" srcset="img/jpeg/about-photo-mobile.jpg"  width="320" height="313">
-              <source media="(max-width: 1199px)" srcset="img/jpeg/about-photo-tablet.jpg" width="686" height="345">
-              <img src="img/jpeg/about-photo.jpg" alt="Фото фитнес центра." width="660" height="401">
+              <source media="(max-width: 767px)" srcset="img/jpeg/about-photo-mobile.jpg 1x, img/jpeg/about-photo-mobile@2x.jpg 2x"  width="320" height="313">
+              <source media="(max-width: 1199px)" srcset="img/jpeg/about-photo-tablet.jpg 1x, img/jpeg/about-photo-tablet@2x.jpg 2x" width="686" height="345">
+              <img src="img/jpeg/about-photo.jpg" srcset="img/jpeg/about-photo@2x.jpg 2x" alt="Фото фитнес центра." width="660" height="401">
             </picture>
 
-            <div class="about__video video mask">
-              <div class="video__wrapper">
-                <div class="video__button-wrapper">
-                  <button class="video__button">
-                    <span class="visually-hidden">Воспроизвести видео</span>
-                    <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                       <path d="M13 7.5L0.249999 14.8612L0.25 0.138783L13 7.5Z" fill="white"/>
-                    </svg>
-                  </button>
+              <div class="about__video video mask">
+                <div class="video__wrapper">
+                  <div class="video__button-wrapper">
+                    <button class="video__button">
+                      <span class="visually-hidden">Воспроизвести видео</span>
+                      <svg class="video__svg" width="13" height="15" viewBox="0 0 13 15" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 7.5L0.249999 14.8612L0.25 0.138783L13 7.5Z"/>
+                      </svg>
+                    </button>
+                  </div>
                 </div>
               </div>
-            </div>
-
             </div>
           </div>
         </div>
@@ -119,7 +118,7 @@
               Абонементы
             </h2>
 
-            <div class="offer__tabs tabs" data-tabs="controls">
+            <div class="offer__tabs tabs">
               <div class="tabs__controls" data-tabs="controls">
                 <button class="tabs__control is-active" data-tabs="control" data-index="0">1 месяц</button>
                 <button class="tabs__control" data-tabs="control" data-index="0">6 месяцев</button>
@@ -192,9 +191,91 @@
                 </div>
 
                 <div class="tabs__element" data-tabs="element">
+                  <div class="tabs__item">
+                    <a class="tabs__link-card link-card" href="#" >
+                      <b class="link-card__bold">
+                        C тренером
+                      </b>
+
+                      <span class="link-card__time">72 занятия</span>
+
+                      <p class="link-card__price">
+                        50500 	<span class="link-symbol">&#8381</span>
+
+                        <span class="link-card__duplicate">5000</span>
+                      </p>
+
+                    </a>
+
+                    <button class="tabs__button button button-blue-bg" type="button">
+                      Купить абонемент
+                    </button>
+                  </div>
+
+                  <div class="tabs__item">
+                    <a class="tabs__link-card link-card" href="#" >
+                      <b class="link-card__bold">
+                        C тренером
+                      </b>
+
+                      <span class="link-card__time">72 занятия</span>
+
+                      <p class="link-card__price">
+                        50500 	<span class="link-symbol">&#8381</span>
+
+                        <span class="link-card__duplicate">5000</span>
+                      </p>
+
+                    </a>
+
+                    <button class="tabs__button button button-blue-bg" type="button">
+                      Купить абонемент
+                    </button>
+                  </div>
+
+                  <div class="tabs__item">
+                    <a class="tabs__link-card link-card" href="#" >
+                      <b class="link-card__bold">
+                        C тренером
+                      </b>
+
+                      <span class="link-card__time">72 занятия</span>
+
+                      <p class="link-card__price">
+                        50500 	<span class="link-symbol">&#8381</span>
+
+                        <span class="link-card__duplicate">5000</span>
+                      </p>
+
+                    </a>
+
+                    <button class="tabs__button button button-blue-bg" type="button">
+                      Купить абонемент
+                    </button>
+                  </div>
                 </div>
 
                 <div class="tabs__element" data-tabs="element">
+                  <div class="tabs__item">
+                    <a class="tabs__link-card link-card" href="#" >
+                      <b class="link-card__bold">
+                        C тренером
+                      </b>
+
+                      <span class="link-card__time">108 занятий</span>
+
+                      <p class="link-card__price">
+                        55500 	<span class="link-symbol">&#8381</span>
+
+                        <span class="link-card__duplicate">5000</span>
+                      </p>
+
+                    </a>
+
+                    <button class="tabs__button button button-blue-bg" type="button">
+                      Купить абонемент
+                    </button>
+                  </div>
                 </div>
 
               </div>
@@ -255,9 +336,9 @@
             </div>
 
             <picture class="promo__picture">
-              <source media="(max-width:767px )" srcset="img/jpeg/promo-mobile.jpg" width="290" height="292">
-              <source media="(max-width:1199px )" srcset="img/jpeg/promo-tablet.jpg" width="386" height="292">
-              <img src="img/jpeg/promo.jpg" alt="Промо изображение." width="660" height="500">
+              <source media="(max-width:767px )" srcset="img/jpeg/promo-mobile.jpg, img/jpeg/promo-mobile@2x.jpg 2x" width="290" height="292">
+              <source media="(max-width:1199px )" srcset="img/jpeg/promo-tablet.jpg, img/jpeg/promo-tablet@2x.jpg 2x" width="386" height="292">
+              <img src="img/jpeg/promo.jpg" srcset="img/jpeg/promo@2x.jpg 2x" alt="Промо изображение." width="660" height="500">
             </picture>
           </div>
         </div>
@@ -269,333 +350,212 @@
             <h2 class="trainers__title title">
               Тренеры
             </h2>
-            <div class="trainers__slider swiper">
-              <div class="trainers__list list swiper-wrapper">
-                <div class="trainers__slide swiper-slide">
-                  <div class="trainers__item">
-                    <a class="trainers__link mask" href="#">
-                      <picture class="trainers__picture">
-                        <source media="(max-width:767px)" srcset="img/jpeg/trainers-photo-4-tablet.jpg" width="226" height="274">
-                        <source media="(max-width:1199px)" srcset="img/jpeg/trainers-photo-4-tablet.jpg" width="268" height="294">
-                        <img src="img/jpeg/trainers-photo-4.jpg" alt="Тренер - Мария Кетова." width="260" height="294">
-                      </picture>
+            <div class="trainers__slider">
+              <div class="trainers__container swiper">
+                <div class="trainers__list list swiper-wrapper">
+                  <div class="trainers__slide swiper-slide">
+                    <div class="trainers__item">
+                      <a class="trainers__link mask" href="#">
+                        <picture class="trainers__picture">
+                          <source media="(max-width:767px)" srcset="img/jpeg/trainers-photo-4-tablet.jpg 1x, img/jpeg/trainers-photo-4-tablet@2x 2x.jpg" width="226" height="274">
+                          <source media="(max-width:1199px)" srcset="img/jpeg/trainers-photo-4-tablet.jpg 1x, img/jpeg/trainers-photo-4-tablet@2x 2x.jpg" width="268" height="294">
+                          <img src="img/jpeg/trainers-photo-4.jpg" srcset="img/jpeg/trainers-photo-4@2x 2x.jpg" alt="Тренер - Мария Кетова." width="260" height="294">
+                        </picture>
 
-                      <p class="trainers__text-bold trainers__text-bold-inner trainers__text-bold--no-hover">
-                        Анна Павлова
-                      </p>
+                        <p class="trainers__text-bold trainers__text-bold-inner trainers__text-bold--no-hover">
+                          Анна Павлова
+                        </p>
 
 
-                    <div class="trainers__characteristic characteristic">
-                      <p class="trainers__text-bold">
-                        Анна Павлова
-                      </p>
+                      <div class="trainers__characteristic characteristic">
+                        <p class="trainers__text-bold">
+                          Анна Павлова
+                        </p>
 
-                      <p class="characteristic__apostrofe text">
-                        CrossFit
-                      </p>
+                        <p class="characteristic__apostrofe text">
+                          CrossFit
+                        </p>
 
-                      <ul class="characteristic__list list">
-                        <li class="characteristic__item text">
-                          Certified Level 3 Trainer
-                        </li>
+                        <ul class="characteristic__list list">
+                          <li class="characteristic__item text">
+                            Certified Level 3 Trainer
+                          </li>
 
-                        <li class="characteristic__item text">
-                          Победитель чемпионата России по CrossFit
-                        </li>
+                          <li class="characteristic__item text">
+                            Победитель чемпионата России по CrossFit
+                          </li>
 
-                        <li class="characteristic__item text">
-                          Опыт - 6 лет
-                        </li>
-                      </ul>
+                          <li class="characteristic__item text">
+                            Опыт - 6 лет
+                          </li>
+                        </ul>
+                      </div>
+                      </a>
                     </div>
-                    </a>
                   </div>
-                </div>
 
-                <div class="trainers__slide swiper-slide" tabindex="0">
-                  <div class="trainers__item">
-                    <a class="trainers__link mask" href="#">
-                      <picture class="trainers__picture">
-                        <source media="(max-width:767px)" srcset="img/jpeg/trainers-photo-4-tablet.jpg" width="226" height="274">
-                        <source media="(max-width:1199px)" srcset="img/jpeg/trainers-photo-4-tablet.jpg" width="268" height="294">
-                        <img src="img/jpeg/trainers-photo-4.jpg" alt="Тренер - Мария Кетова." width="260" height="294">
-                      </picture>
+                  <div class="trainers__slide swiper-slide">
+                    <div class="trainers__item">
+                      <a class="trainers__link mask" href="#">
+                        <picture class="trainers__picture">
+                          <source media="(max-width:767px)" srcset="img/jpeg/trainers-photo-4-tablet.jpg 1x, img/jpeg/trainers-photo-4-tablet@2x 2x.jpg" width="226" height="274">
+                          <source media="(max-width:1199px)" srcset="img/jpeg/trainers-photo-4-tablet.jpg 1x, img/jpeg/trainers-photo-4-tablet@2x 2x.jpg" width="268" height="294">
+                          <img src="img/jpeg/trainers-photo-4.jpg" srcset="img/jpeg/trainers-photo-4@2x 2x.jpg" alt="Тренер - Мария Кетова." width="260" height="294">
+                        </picture>
 
-                      <p class="trainers__text-bold trainers__text-bold-inner trainers__text-bold--no-hover">
-                        Анна Павлова
-                      </p>
+                        <p class="trainers__text-bold trainers__text-bold-inner trainers__text-bold--no-hover">
+                          Анна Павлова
+                        </p>
 
 
-                    <div class="trainers__characteristic characteristic">
-                      <p class="trainers__text-bold">
-                        Анна Павлова
-                      </p>
+                      <div class="trainers__characteristic characteristic">
+                        <p class="trainers__text-bold">
+                          Анна Павлова
+                        </p>
 
-                      <p class="characteristic__apostrofe text">
-                        CrossFit
-                      </p>
+                        <p class="characteristic__apostrofe text">
+                          CrossFit
+                        </p>
 
-                      <ul class="characteristic__list list">
-                        <li class="characteristic__item text">
-                          Certified Level 3 Trainer
-                        </li>
+                        <ul class="characteristic__list list">
+                          <li class="characteristic__item text">
+                            Certified Level 3 Trainer
+                          </li>
 
-                        <li class="characteristic__item text">
-                          Победитель чемпионата России по CrossFit
-                        </li>
+                          <li class="characteristic__item text">
+                            Победитель чемпионата России по CrossFit
+                          </li>
 
-                        <li class="characteristic__item text">
-                          Опыт - 6 лет
-                        </li>
-                      </ul>
+                          <li class="characteristic__item text">
+                            Опыт - 6 лет
+                          </li>
+                        </ul>
+                      </div>
+                      </a>
                     </div>
-                    </a>
                   </div>
-                </div>
 
-                <div class="trainers__slide swiper-slide" tabindex="0">
-                  <div class="trainers__item">
-                    <a class="trainers__link mask" href="#">
-                      <picture class="trainers__picture">
-                        <source media="(max-width:767px)" srcset="img/jpeg/trainers-photo-4-tablet.jpg" width="226" height="274">
-                        <source media="(max-width:1199px)" srcset="img/jpeg/trainers-photo-4-tablet.jpg" width="268" height="294">
-                        <img src="img/jpeg/trainers-photo-4.jpg" alt="Тренер - Мария Кетова." width="260" height="294">
-                      </picture>
+                  <div class="trainers__slide swiper-slide">
+                    <div class="trainers__item">
+                      <a class="trainers__link mask" href="#">
+                        <picture class="trainers__picture">
+                          <source media="(max-width:767px)" srcset="img/jpeg/trainers-photo-4-tablet.jpg 1x, img/jpeg/trainers-photo-4-tablet@2x 2x.jpg" width="226" height="274">
+                          <source media="(max-width:1199px)" srcset="img/jpeg/trainers-photo-4-tablet.jpg 1x, img/jpeg/trainers-photo-4-tablet@2x 2x.jpg" width="268" height="294">
+                          <img src="img/jpeg/trainers-photo-4.jpg" srcset="img/jpeg/trainers-photo-4@2x 2x.jpg" alt="Тренер - Мария Кетова." width="260" height="294">
+                        </picture>
 
-                      <p class="trainers__text-bold trainers__text-bold-inner trainers__text-bold--no-hover">
-                        Анна Павлова
-                      </p>
+                        <p class="trainers__text-bold trainers__text-bold-inner trainers__text-bold--no-hover">
+                          Анна Павлова
+                        </p>
 
 
-                    <div class="trainers__characteristic characteristic">
-                      <p class="trainers__text-bold">
-                        Анна Павлова
-                      </p>
+                      <div class="trainers__characteristic characteristic">
+                        <p class="trainers__text-bold">
+                          Анна Павлова
+                        </p>
 
-                      <p class="characteristic__apostrofe text">
-                        CrossFit
-                      </p>
+                        <p class="characteristic__apostrofe text">
+                          CrossFit
+                        </p>
 
-                      <ul class="characteristic__list list">
-                        <li class="characteristic__item text">
-                          Certified Level 3 Trainer
-                        </li>
+                        <ul class="characteristic__list list">
+                          <li class="characteristic__item text">
+                            Certified Level 3 Trainer
+                          </li>
 
-                        <li class="characteristic__item text">
-                          Победитель чемпионата России по CrossFit
-                        </li>
+                          <li class="characteristic__item text">
+                            Победитель чемпионата России по CrossFit
+                          </li>
 
-                        <li class="characteristic__item text">
-                          Опыт - 6 лет
-                        </li>
-                      </ul>
+                          <li class="characteristic__item text">
+                            Опыт - 6 лет
+                          </li>
+                        </ul>
+                      </div>
+                      </a>
                     </div>
-                    </a>
                   </div>
-                </div>
 
-                <div class="trainers__slide swiper-slide" tabindex="0">
-                  <div class="trainers__item">
-                    <a class="trainers__link mask" href="#">
-                      <picture class="trainers__picture">
-                        <source media="(max-width:767px)" srcset="img/jpeg/trainers-photo-4-tablet.jpg" width="226" height="274">
-                        <source media="(max-width:1199px)" srcset="img/jpeg/trainers-photo-4-tablet.jpg" width="268" height="294">
-                        <img src="img/jpeg/trainers-photo-4.jpg" alt="Тренер - Мария Кетова." width="260" height="294">
-                      </picture>
+                  <div class="trainers__slide swiper-slide">
+                    <div class="trainers__item">
+                      <a class="trainers__link mask" href="#">
+                        <picture class="trainers__picture">
+                          <source media="(max-width:767px)" srcset="img/jpeg/trainers-photo-4-tablet.jpg 1x, img/jpeg/trainers-photo-4-tablet@2x 2x.jpg" width="226" height="274">
+                          <source media="(max-width:1199px)" srcset="img/jpeg/trainers-photo-4-tablet.jpg 1x, img/jpeg/trainers-photo-4-tablet@2x 2x.jpg" width="268" height="294">
+                          <img src="img/jpeg/trainers-photo-4.jpg" srcset="img/jpeg/trainers-photo-4@2x 2x.jpg" alt="Тренер - Мария Кетова." width="260" height="294">
+                        </picture>
 
-                      <p class="trainers__text-bold trainers__text-bold-inner trainers__text-bold--no-hover">
-                        Анна Павлова
-                      </p>
+                        <p class="trainers__text-bold trainers__text-bold-inner trainers__text-bold--no-hover">
+                          Анна Павлова
+                        </p>
 
 
-                    <div class="trainers__characteristic characteristic">
-                      <p class="trainers__text-bold">
-                        Анна Павлова
-                      </p>
+                      <div class="trainers__characteristic characteristic">
+                        <p class="trainers__text-bold">
+                          Анна Павлова
+                        </p>
 
-                      <p class="characteristic__apostrofe text">
-                        CrossFit
-                      </p>
+                        <p class="characteristic__apostrofe text">
+                          CrossFit
+                        </p>
 
-                      <ul class="characteristic__list list">
-                        <li class="characteristic__item text">
-                          Certified Level 3 Trainer
-                        </li>
+                        <ul class="characteristic__list list">
+                          <li class="characteristic__item text">
+                            Certified Level 3 Trainer
+                          </li>
 
-                        <li class="characteristic__item text">
-                          Победитель чемпионата России по CrossFit
-                        </li>
+                          <li class="characteristic__item text">
+                            Победитель чемпионата России по CrossFit
+                          </li>
 
-                        <li class="characteristic__item text">
-                          Опыт - 6 лет
-                        </li>
-                      </ul>
+                          <li class="characteristic__item text">
+                            Опыт - 6 лет
+                          </li>
+                        </ul>
+                      </div>
+                      </a>
                     </div>
-                    </a>
                   </div>
-                </div>
 
-                <div class="trainers__slide swiper-slide" tabindex="0">
-                  <div class="trainers__item">
-                    <a class="trainers__link mask" href="#">
-                      <picture class="trainers__picture">
-                        <source media="(max-width:767px)" srcset="img/jpeg/trainers-photo-4-tablet.jpg" width="226" height="274">
-                        <source media="(max-width:1199px)" srcset="img/jpeg/trainers-photo-4-tablet.jpg" width="268" height="294">
-                        <img src="img/jpeg/trainers-photo-4.jpg" alt="Тренер - Мария Кетова." width="260" height="294">
-                      </picture>
+                  <div class="trainers__slide swiper-slide">
+                    <div class="trainers__item">
+                      <a class="trainers__link mask" href="#">
+                        <picture class="trainers__picture">
+                          <source media="(max-width:767px)" srcset="img/jpeg/trainers-photo-4-tablet.jpg 1x, img/jpeg/trainers-photo-4-tablet@2x 2x.jpg" width="226" height="274">
+                          <source media="(max-width:1199px)" srcset="img/jpeg/trainers-photo-4-tablet.jpg 1x, img/jpeg/trainers-photo-4-tablet@2x 2x.jpg" width="268" height="294">
+                          <img src="img/jpeg/trainers-photo-4.jpg" srcset="img/jpeg/trainers-photo-4@2x 2x.jpg" alt="Тренер - Мария Кетова." width="260" height="294">
+                        </picture>
 
-                      <p class="trainers__text-bold trainers__text-bold-inner trainers__text-bold--no-hover">
-                        Анна Павлова
-                      </p>
+                        <p class="trainers__text-bold trainers__text-bold-inner trainers__text-bold--no-hover">
+                          Анна Павлова
+                        </p>
 
 
-                    <div class="trainers__characteristic characteristic">
-                      <p class="trainers__text-bold">
-                        Анна Павлова
-                      </p>
+                      <div class="trainers__characteristic characteristic">
+                        <p class="trainers__text-bold">
+                          Анна Павлова
+                        </p>
 
-                      <p class="characteristic__apostrofe text">
-                        CrossFit
-                      </p>
+                        <p class="characteristic__apostrofe text">
+                          CrossFit
+                        </p>
 
-                      <ul class="characteristic__list list">
-                        <li class="characteristic__item text">
-                          Certified Level 3 Trainer
-                        </li>
+                        <ul class="characteristic__list list">
+                          <li class="characteristic__item text">
+                            Certified Level 3 Trainer
+                          </li>
 
-                        <li class="characteristic__item text">
-                          Победитель чемпионата России по CrossFit
-                        </li>
+                          <li class="characteristic__item text">
+                            Победитель чемпионата России по CrossFit
+                          </li>
 
-                        <li class="characteristic__item text">
-                          Опыт - 6 лет
-                        </li>
-                      </ul>
+                          <li class="characteristic__item text">
+                            Опыт - 6 лет
+                          </li>
+                        </ul>
+                      </div>
+                      </a>
                     </div>
-                    </a>
-                  </div>
-                </div>
-
-                <div class="trainers__slide swiper-slide" tabindex="0">
-                  <div class="trainers__item">
-                    <a class="trainers__link mask" href="#">
-                      <picture class="trainers__picture">
-                        <source media="(max-width:767px)" srcset="img/jpeg/trainers-photo-4-tablet.jpg" width="226" height="274">
-                        <source media="(max-width:1199px)" srcset="img/jpeg/trainers-photo-4-tablet.jpg" width="268" height="294">
-                        <img src="img/jpeg/trainers-photo-4.jpg" alt="Тренер - Мария Кетова." width="260" height="294">
-                      </picture>
-
-                      <p class="trainers__text-bold trainers__text-bold-inner trainers__text-bold--no-hover">
-                        Анна Павлова
-                      </p>
-
-
-                    <div class="trainers__characteristic characteristic">
-                      <p class="trainers__text-bold">
-                        Анна Павлова
-                      </p>
-
-                      <p class="characteristic__apostrofe text">
-                        CrossFit
-                      </p>
-
-                      <ul class="characteristic__list list">
-                        <li class="characteristic__item text">
-                          Certified Level 3 Trainer
-                        </li>
-
-                        <li class="characteristic__item text">
-                          Победитель чемпионата России по CrossFit
-                        </li>
-
-                        <li class="characteristic__item text">
-                          Опыт - 6 лет
-                        </li>
-                      </ul>
-                    </div>
-                    </a>
-                  </div>
-                </div>
-
-                <div class="trainers__slide swiper-slide" tabindex="0">
-                  <div class="trainers__item">
-                    <a class="trainers__link mask" href="#">
-                      <picture class="trainers__picture">
-                        <source media="(max-width:767px)" srcset="img/jpeg/trainers-photo-4-tablet.jpg" width="226" height="274">
-                        <source media="(max-width:1199px)" srcset="img/jpeg/trainers-photo-4-tablet.jpg" width="268" height="294">
-                        <img src="img/jpeg/trainers-photo-4.jpg" alt="Тренер - Мария Кетова." width="260" height="294">
-                      </picture>
-
-                      <p class="trainers__text-bold trainers__text-bold-inner trainers__text-bold--no-hover">
-                        Анна Павлова
-                      </p>
-
-
-                    <div class="trainers__characteristic characteristic">
-                      <p class="trainers__text-bold">
-                        Анна Павлова
-                      </p>
-
-                      <p class="characteristic__apostrofe text">
-                        CrossFit
-                      </p>
-
-                      <ul class="characteristic__list list">
-                        <li class="characteristic__item text">
-                          Certified Level 3 Trainer
-                        </li>
-
-                        <li class="characteristic__item text">
-                          Победитель чемпионата России по CrossFit
-                        </li>
-
-                        <li class="characteristic__item text">
-                          Опыт - 6 лет
-                        </li>
-                      </ul>
-                    </div>
-                    </a>
-                  </div>
-                </div>
-
-                <div class="trainers__slide swiper-slide" tabindex="0">
-                  <div class="trainers__item">
-                    <a class="trainers__link mask" href="#">
-                      <picture class="trainers__picture">
-                        <source media="(max-width:767px)" srcset="img/jpeg/trainers-photo-4-tablet.jpg" width="226" height="274">
-                        <source media="(max-width:1199px)" srcset="img/jpeg/trainers-photo-4-tablet.jpg" width="268" height="294">
-                        <img src="img/jpeg/trainers-photo-4.jpg" alt="Тренер - Мария Кетова." width="260" height="294">
-                      </picture>
-
-                      <p class="trainers__text-bold trainers__text-bold-inner trainers__text-bold--no-hover">
-                        Анна Павлова
-                      </p>
-
-
-                    <div class="trainers__characteristic characteristic">
-                      <p class="trainers__text-bold">
-                        Анна Павлова
-                      </p>
-
-                      <p class="characteristic__apostrofe text">
-                        CrossFit
-                      </p>
-
-                      <ul class="characteristic__list list">
-                        <li class="characteristic__item text">
-                          Certified Level 3 Trainer
-                        </li>
-
-                        <li class="characteristic__item text">
-                          Победитель чемпионата России по CrossFit
-                        </li>
-
-                        <li class="characteristic__item text">
-                          Опыт - 6 лет
-                        </li>
-                      </ul>
-                    </div>
-                    </a>
                   </div>
                 </div>
               </div>
@@ -754,9 +714,9 @@
                 </div>
 
                 <picture class="main-promotion__picture">
-                  <source media="(max-width: 767px)" srcset="img/jpeg/promotions-photo-mobile.jpg" width="290" height="299">
-                  <source media="(max-width: 1199px)" srcset="img/jpeg/promotions-photo-tablet.jpg" width="399" height="462">
-                  <img src="img/jpeg/promotions-photo.jpg" alt="Наша довольная клиентка." width="280" height="462">
+                  <source media="(max-width: 767px)" srcset="img/jpeg/promotions-photo-mobile.jpg, img/jpeg/promotions-photo-mobile@2x 2x.jpg" width="290" height="299">
+                  <source media="(max-width: 1199px)" srcset="img/jpeg/promotions-photo-tablet.jpg, img/jpeg/promotions-photo-tablet@2x 2x.jpg" width="399" height="462">
+                  <img src="img/jpeg/promotions-photo.jpg" srcset="img/jpeg/promotions-photo.jpg@2x 2x" alt="Наша довольная клиентка." width="280" height="462">
                 </picture>
               </div>
             </div>
@@ -796,324 +756,445 @@
 
       <section class="faq">
         <div class="faq__content">
-          <div class="faq__wrapper container">
+          <div class="faq__wrapper container" data-tabs="parent">
             <h2 class="faq__title title">
               Вопросы и ответы
             </h2>
 
-            <div class="faq__buttons">
-              <button class="faq__button button button-blue-bg">
+            <div class="faq__buttons" data-tabs="controls">
+              <button class="faq__button button button-blue-bg tabs__control" data-tabs="control">
                 Центр
               </button>
 
-              <button class="faq__button button faq__button--active button-blue-bg">
+              <button class="faq__button button button-blue-bg tabs__control" data-tabs="control">
                 Абонемент
               </button>
 
-              <button class="faq__button button button-blue-bg">
+              <button class="faq__button button button-blue-bg tabs__control" data-tabs="control">
                 Услуги
               </button>
 
-              <button class="faq__button button button-blue-bg">
+              <button class="faq__button button button-blue-bg tabs__control" data-tabs="control">
                 Правила
               </button>
             </div>
 
-            <ul class="faq__list list faq__list--active">
-              <li class="faq__item">
-                <p class="faq__text-medium text-medium">
-                  Занятия с тренером входят в абонемент?
-                </p>
+            <div class="faq__lists" data-tabs="content" >
+              <ul class="faq__list list accordion" data-tabs="element" data-accordion="parent">
+                <li class="faq__item accordion__element" data-accordion="element" >
+                  <p class="faq__text-medium text-medium">
+                    Занятия с тренером входят в абонемент?
+                  </p>
 
-                <p class="faq__text text ">
-                  При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно.
-                  В зале всегда присутствует дежурный тренер, которому можно задать вопрос,
-                  получить небольшую консультацию по тренажеру или технике выполнения упражнения.
-                </p>
+                  <div class="faq__text-wrapper" data-accordion="content">
+                    <p class="faq__text text">
+                      При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно.
+                      В зале всегда присутствует дежурный тренер, которому можно задать вопрос,
+                      получить небольшую консультацию по тренажеру или технике выполнения упражнения.
+                    </p>
 
-                <div class="faq__more">
-                  <button class="faq__plus">
+                  </div>
+                  <div class="faq__more">
+                    <button class="faq__plus accordion__button" data-accordion="button" type="button">
 
-                  </button>
-                </div>
-              </li>
+                    </button>
+                  </div>
+                </li>
 
-              <li class="faq__item">
-                <p class="faq__text-medium text-medium">
-                  Можно ли заморозить абонемент?
-                </p>
+                <li class="faq__item" data-accordion="element" >
+                  <p class="faq__text-medium text-medium">
+                    Занятия с тренером входят в абонемент?
+                  </p>
 
-                <p class="faq__text text">
-                  При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно.
-                  В зале всегда присутствует дежурный тренер, которому можно задать вопрос,
-                  получить небольшую консультацию по тренажеру или технике выполнения упражнения.
-                </p>
+                  <div class="faq__text-wrapper" data-accordion="content">
+                    <p class="faq__text text">
+                      При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно.
+                      В зале всегда присутствует дежурный тренер, которому можно задать вопрос,
+                      получить небольшую консультацию по тренажеру или технике выполнения упражнения.
+                    </p>
 
-                <div class="faq__more">
-                  <button class="faq__plus">
+                  </div>
+                  <div class="faq__more">
+                    <button class="faq__plus" data-accordion="button" type="button">
 
-                  </button>
-                </div>
-              </li>
+                    </button>
+                  </div>
+                </li>
 
-              <li class="faq__item">
-                <p class="faq__text-medium text-medium">
-                  Занятия с тренером входят в абонемент?
-                </p>
+                <li class="faq__item" data-accordion="element" >
+                  <p class="faq__text-medium text-medium">
+                    Занятия с тренером входят в абонемент?
+                  </p>
 
-                <p class="faq__text text">
-                  При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно.
-                  В зале всегда присутствует дежурный тренер, которому можно задать вопрос,
-                  получить небольшую консультацию по тренажеру или технике выполнения упражнения.
-                </p>
+                  <div class="faq__text-wrapper" data-accordion="content">
+                    <p class="faq__text text">
+                      При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно.
+                      В зале всегда присутствует дежурный тренер, которому можно задать вопрос,
+                      получить небольшую консультацию по тренажеру или технике выполнения упражнения.
+                    </p>
 
-                <div class="faq__more">
-                  <button class="faq__plus">
+                  </div>
+                  <div class="faq__more">
+                    <button class="faq__plus" data-accordion="button" type="button">
 
-                  </button>
-                </div>
-              </li>
+                    </button>
+                  </div>
+                </li>
 
-              <li class="faq__item">
-                <p class="faq__text-medium text-medium">
-                  Занятия с тренером входят в абонемент?
-                </p>
+                <li class="faq__item" data-accordion="element" >
+                  <p class="faq__text-medium text-medium">
+                    Занятия с тренером входят в абонемент?
+                  </p>
 
-                <p class="faq__text text">
-                  При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно.
-                  В зале всегда присутствует дежурный тренер, которому можно задать вопрос,
-                  получить небольшую консультацию по тренажеру или технике выполнения упражнения.
-                </p>
+                  <div class="faq__text-wrapper" data-accordion="content">
+                    <p class="faq__text text">
+                      При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно.
+                      В зале всегда присутствует дежурный тренер, которому можно задать вопрос,
+                      получить небольшую консультацию по тренажеру или технике выполнения упражнения.
+                    </p>
 
-                <div class="faq__more">
-                  <button class="faq__plus">
+                  </div>
+                  <div class="faq__more">
+                    <button class="faq__plus" data-accordion="button" type="button">
 
-                  </button>
-                </div>
-              </li>
-            </ul>
+                    </button>
+                  </div>
+                </li>
 
-            <ul class="faq__list list">
-              <li class="faq__item">
-                <p class="faq__text-medium text-medium">
-                  Занятия с тренером входят в абонемент?
-                </p>
+              </ul>
 
-                <p class="faq__text text ">
-                  При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно.
-                  В зале всегда присутствует дежурный тренер, которому можно задать вопрос,
-                  получить небольшую консультацию по тренажеру или технике выполнения упражнения.
-                </p>
+              <ul class="faq__list list accordion" data-tabs="element" data-accordion="parent">
+                <li class="faq__item accordion__element" data-accordion="element" >
+                  <p class="faq__text-medium text-medium">
+                    Занятия с тренером входят в абонемент?
+                  </p>
 
-                <div class="faq__more">
-                  <button class="faq__plus faq__plus--active">
+                  <div class="faq__text-wrapper" data-accordion="content">
+                    <p class="faq__text text">
+                      При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно.
+                      В зале всегда присутствует дежурный тренер, которому можно задать вопрос,
+                      получить небольшую консультацию по тренажеру или технике выполнения упражнения.
+                    </p>
 
-                  </button>
-                </div>
-              </li>
+                  </div>
+                  <div class="faq__more">
+                    <button class="faq__plus accordion__button" data-accordion="button" type="button">
 
-              <li class="faq__item">
-                <p class="faq__text-medium text-medium">
-                  Можно ли заморозить абонемент?
-                </p>
+                    </button>
+                  </div>
+                </li>
 
-                <p class="faq__text text">
-                  При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно.
-                  В зале всегда присутствует дежурный тренер, которому можно задать вопрос,
-                  получить небольшую консультацию по тренажеру или технике выполнения упражнения.
-                </p>
+                <li class="faq__item" data-accordion="element" >
+                  <p class="faq__text-medium text-medium">
+                    Занятия с тренером входят в абонемент?
+                  </p>
 
-                <div class="faq__more">
-                  <button class="faq__plus">
+                  <div class="faq__text-wrapper" data-accordion="content">
+                    <p class="faq__text text">
+                      При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно.
+                      В зале всегда присутствует дежурный тренер, которому можно задать вопрос,
+                      получить небольшую консультацию по тренажеру или технике выполнения упражнения.
+                    </p>
 
-                  </button>
-                </div>
-              </li>
+                  </div>
+                  <div class="faq__more">
+                    <button class="faq__plus" data-accordion="button" type="button">
 
-              <li class="faq__item">
-                <p class="faq__text-medium text-medium">
-                  Занятия с тренером входят в абонемент?
-                </p>
+                    </button>
+                  </div>
+                </li>
 
-                <p class="faq__text text">
-                  При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно.
-                  В зале всегда присутствует дежурный тренер, которому можно задать вопрос,
-                  получить небольшую консультацию по тренажеру или технике выполнения упражнения.
-                </p>
+                <li class="faq__item" data-accordion="element" >
+                  <p class="faq__text-medium text-medium">
+                    Занятия с тренером входят в абонемент?
+                  </p>
 
-                <div class="faq__more">
-                  <button class="faq__plus">
+                  <div class="faq__text-wrapper" data-accordion="content">
+                    <p class="faq__text text">
+                      При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно.
+                      В зале всегда присутствует дежурный тренер, которому можно задать вопрос,
+                      получить небольшую консультацию по тренажеру или технике выполнения упражнения.
+                    </p>
 
-                  </button>
-                </div>
-              </li>
+                  </div>
+                  <div class="faq__more">
+                    <button class="faq__plus" data-accordion="button" type="button">
 
-              <li class="faq__item">
-                <p class="faq__text-medium text-medium">
-                  Занятия с тренером входят в абонемент?
-                </p>
+                    </button>
+                  </div>
+                </li>
 
-                <p class="faq__text text">
-                  При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно.
-                  В зале всегда присутствует дежурный тренер, которому можно задать вопрос,
-                  получить небольшую консультацию по тренажеру или технике выполнения упражнения.
-                </p>
+                <li class="faq__item" data-accordion="element" >
+                  <p class="faq__text-medium text-medium">
+                    Занятия с тренером входят в абонемент?
+                  </p>
 
-                <div class="faq__more">
-                  <button class="faq__plus">
+                  <div class="faq__text-wrapper" data-accordion="content">
+                    <p class="faq__text text">
+                      При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно.
+                      В зале всегда присутствует дежурный тренер, которому можно задать вопрос,
+                      получить небольшую консультацию по тренажеру или технике выполнения упражнения.
+                    </p>
 
-                  </button>
-                </div>
-              </li>
-            </ul>
+                  </div>
+                  <div class="faq__more">
+                    <button class="faq__plus" data-accordion="button" type="button">
 
-            <ul class="faq__list list">
-              <li class="faq__item">
-                <p class="faq__text-medium text-medium">
-                  Занятия с тренером входят в абонемент?
-                </p>
+                    </button>
+                  </div>
+                </li>
 
-                <p class="faq__text text ">
-                  При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно.
-                  В зале всегда присутствует дежурный тренер, которому можно задать вопрос,
-                  получить небольшую консультацию по тренажеру или технике выполнения упражнения.
-                </p>
+              </ul>
 
-                <div class="faq__more">
-                  <button class="faq__plus faq__plus--active">
+              <ul class="faq__list list accordion" data-tabs="element" data-accordion="parent">
+                <li class="faq__item accordion__element" data-accordion="element" >
+                  <p class="faq__text-medium text-medium">
+                    Занятия с тренером входят в абонемент?
+                  </p>
 
-                  </button>
-                </div>
-              </li>
+                  <div class="faq__text-wrapper" data-accordion="content">
+                    <p class="faq__text text">
+                      При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно.
+                      В зале всегда присутствует дежурный тренер, которому можно задать вопрос,
+                      получить небольшую консультацию по тренажеру или технике выполнения упражнения.
+                    </p>
 
-              <li class="faq__item">
-                <p class="faq__text-medium text-medium">
-                  Можно ли заморозить абонемент?
-                </p>
+                  </div>
+                  <div class="faq__more">
+                    <button class="faq__plus accordion__button" data-accordion="button" type="button">
 
-                <p class="faq__text text">
-                  При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно.
-                  В зале всегда присутствует дежурный тренер, которому можно задать вопрос,
-                  получить небольшую консультацию по тренажеру или технике выполнения упражнения.
-                </p>
+                    </button>
+                  </div>
+                </li>
 
-                <div class="faq__more">
-                  <button class="faq__plus">
+                <li class="faq__item" data-accordion="element" >
+                  <p class="faq__text-medium text-medium">
+                    Занятия с тренером входят в абонемент?
+                  </p>
 
-                  </button>
-                </div>
-              </li>
+                  <div class="faq__text-wrapper" data-accordion="content">
+                    <p class="faq__text text">
+                      При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно.
+                      В зале всегда присутствует дежурный тренер, которому можно задать вопрос,
+                      получить небольшую консультацию по тренажеру или технике выполнения упражнения.
+                    </p>
 
-              <li class="faq__item">
-                <p class="faq__text-medium text-medium">
-                  Занятия с тренером входят в абонемент?
-                </p>
+                  </div>
+                  <div class="faq__more">
+                    <button class="faq__plus" data-accordion="button" type="button">
 
-                <p class="faq__text text">
-                  При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно.
-                  В зале всегда присутствует дежурный тренер, которому можно задать вопрос,
-                  получить небольшую консультацию по тренажеру или технике выполнения упражнения.
-                </p>
+                    </button>
+                  </div>
+                </li>
 
-                <div class="faq__more">
-                  <button class="faq__plus">
+                <li class="faq__item" data-accordion="element" >
+                  <p class="faq__text-medium text-medium">
+                    Занятия с тренером входят в абонемент?
+                  </p>
 
-                  </button>
-                </div>
-              </li>
+                  <div class="faq__text-wrapper" data-accordion="content">
+                    <p class="faq__text text">
+                      При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно.
+                      В зале всегда присутствует дежурный тренер, которому можно задать вопрос,
+                      получить небольшую консультацию по тренажеру или технике выполнения упражнения.
+                    </p>
 
-              <li class="faq__item">
-                <p class="faq__text-medium text-medium">
-                  Занятия с тренером входят в абонемент?
-                </p>
+                  </div>
+                  <div class="faq__more">
+                    <button class="faq__plus" data-accordion="button" type="button">
 
-                <p class="faq__text text">
-                  При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно.
-                  В зале всегда присутствует дежурный тренер, которому можно задать вопрос,
-                  получить небольшую консультацию по тренажеру или технике выполнения упражнения.
-                </p>
+                    </button>
+                  </div>
+                </li>
 
-                <div class="faq__more">
-                  <button class="faq__plus">
+                <li class="faq__item" data-accordion="element" >
+                  <p class="faq__text-medium text-medium">
+                    Занятия с тренером входят в абонемент?
+                  </p>
 
-                  </button>
-                </div>
-              </li>
-            </ul>
+                  <div class="faq__text-wrapper" data-accordion="content">
+                    <p class="faq__text text">
+                      При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно.
+                      В зале всегда присутствует дежурный тренер, которому можно задать вопрос,
+                      получить небольшую консультацию по тренажеру или технике выполнения упражнения.
+                    </p>
 
-            <ul class="faq__list list">
-              <li class="faq__item">
-                <p class="faq__text-medium text-medium">
-                  Занятия с тренером входят в абонемент?
-                </p>
+                  </div>
+                  <div class="faq__more">
+                    <button class="faq__plus" data-accordion="button" type="button">
 
-                <p class="faq__text text ">
-                  При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно.
-                  В зале всегда присутствует дежурный тренер, которому можно задать вопрос,
-                  получить небольшую консультацию по тренажеру или технике выполнения упражнения.
-                </p>
+                    </button>
+                  </div>
+                </li>
 
-                <div class="faq__more">
-                  <button class="faq__plus faq__plus--active">
+              </ul>
 
-                  </button>
-                </div>
-              </li>
+              <ul class="faq__list list accordion" data-tabs="element" data-accordion="parent">
+                <li class="faq__item accordion__element" data-accordion="element" >
+                  <p class="faq__text-medium text-medium">
+                    Занятия с тренером входят в абонемент?
+                  </p>
 
-              <li class="faq__item">
-                <p class="faq__text-medium text-medium">
-                  Можно ли заморозить абонемент?
-                </p>
+                  <div class="faq__text-wrapper" data-accordion="content">
+                    <p class="faq__text text">
+                      При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно.
+                      В зале всегда присутствует дежурный тренер, которому можно задать вопрос,
+                      получить небольшую консультацию по тренажеру или технике выполнения упражнения.
+                    </p>
 
-                <p class="faq__text text">
-                  При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно.
-                  В зале всегда присутствует дежурный тренер, которому можно задать вопрос,
-                  получить небольшую консультацию по тренажеру или технике выполнения упражнения.
-                </p>
+                  </div>
+                  <div class="faq__more">
+                    <button class="faq__plus accordion__button" data-accordion="button" type="button">
 
-                <div class="faq__more">
-                  <button class="faq__plus">
+                    </button>
+                  </div>
+                </li>
 
-                  </button>
-                </div>
-              </li>
+                <li class="faq__item" data-accordion="element" >
+                  <p class="faq__text-medium text-medium">
+                    Занятия с тренером входят в абонемент?
+                  </p>
 
-              <li class="faq__item">
-                <p class="faq__text-medium text-medium">
-                  Занятия с тренером входят в абонемент?
-                </p>
+                  <div class="faq__text-wrapper" data-accordion="content">
+                    <p class="faq__text text">
+                      При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно.
+                      В зале всегда присутствует дежурный тренер, которому можно задать вопрос,
+                      получить небольшую консультацию по тренажеру или технике выполнения упражнения.
+                    </p>
 
-                <p class="faq__text text">
-                  При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно.
-                  В зале всегда присутствует дежурный тренер, которому можно задать вопрос,
-                  получить небольшую консультацию по тренажеру или технике выполнения упражнения.
-                </p>
+                  </div>
+                  <div class="faq__more">
+                    <button class="faq__plus" data-accordion="button" type="button">
 
-                <div class="faq__more">
-                  <button class="faq__plus">
+                    </button>
+                  </div>
+                </li>
 
-                  </button>
-                </div>
-              </li>
+                <li class="faq__item" data-accordion="element" >
+                  <p class="faq__text-medium text-medium">
+                    Занятия с тренером входят в абонемент?
+                  </p>
 
-              <li class="faq__item">
-                <p class="faq__text-medium text-medium">
-                  Занятия с тренером входят в абонемент?
-                </p>
+                  <div class="faq__text-wrapper" data-accordion="content">
+                    <p class="faq__text text">
+                      При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно.
+                      В зале всегда присутствует дежурный тренер, которому можно задать вопрос,
+                      получить небольшую консультацию по тренажеру или технике выполнения упражнения.
+                    </p>
 
-                <p class="faq__text text">
-                  При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно.
-                  В зале всегда присутствует дежурный тренер, которому можно задать вопрос,
-                  получить небольшую консультацию по тренажеру или технике выполнения упражнения.
-                </p>
+                  </div>
+                  <div class="faq__more">
+                    <button class="faq__plus" data-accordion="button" type="button">
 
-                <div class="faq__more">
-                  <button class="faq__plus">
+                    </button>
+                  </div>
+                </li>
 
-                  </button>
-                </div>
-              </li>
-            </ul>
+                <li class="faq__item" data-accordion="element" >
+                  <p class="faq__text-medium text-medium">
+                    Занятия с тренером входят в абонемент?
+                  </p>
+
+                  <div class="faq__text-wrapper" data-accordion="content">
+                    <p class="faq__text text">
+                      При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно.
+                      В зале всегда присутствует дежурный тренер, которому можно задать вопрос,
+                      получить небольшую консультацию по тренажеру или технике выполнения упражнения.
+                    </p>
+
+                  </div>
+                  <div class="faq__more">
+                    <button class="faq__plus" data-accordion="button" type="button">
+
+                    </button>
+                  </div>
+                </li>
+
+              </ul>
+
+              <ul class="faq__list list accordion" data-tabs="element" data-accordion="parent">
+                <li class="faq__item accordion__element" data-accordion="element" >
+                  <p class="faq__text-medium text-medium">
+                    Занятия с тренером входят в абонемент?
+                  </p>
+
+                  <div class="faq__text-wrapper" data-accordion="content">
+                    <p class="faq__text text">
+                      При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно.
+                      В зале всегда присутствует дежурный тренер, которому можно задать вопрос,
+                      получить небольшую консультацию по тренажеру или технике выполнения упражнения.
+                    </p>
+
+                  </div>
+                  <div class="faq__more">
+                    <button class="faq__plus accordion__button" data-accordion="button" type="button">
+
+                    </button>
+                  </div>
+                </li>
+
+                <li class="faq__item" data-accordion="element" >
+                  <p class="faq__text-medium text-medium">
+                    Занятия с тренером входят в абонемент?
+                  </p>
+
+                  <div class="faq__text-wrapper" data-accordion="content">
+                    <p class="faq__text text">
+                      При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно.
+                      В зале всегда присутствует дежурный тренер, которому можно задать вопрос,
+                      получить небольшую консультацию по тренажеру или технике выполнения упражнения.
+                    </p>
+
+                  </div>
+                  <div class="faq__more">
+                    <button class="faq__plus" data-accordion="button" type="button">
+
+                    </button>
+                  </div>
+                </li>
+
+                <li class="faq__item" data-accordion="element" >
+                  <p class="faq__text-medium text-medium">
+                    Занятия с тренером входят в абонемент?
+                  </p>
+
+                  <div class="faq__text-wrapper" data-accordion="content">
+                    <p class="faq__text text">
+                      При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно.
+                      В зале всегда присутствует дежурный тренер, которому можно задать вопрос,
+                      получить небольшую консультацию по тренажеру или технике выполнения упражнения.
+                    </p>
+
+                  </div>
+                  <div class="faq__more">
+                    <button class="faq__plus" data-accordion="button" type="button">
+
+                    </button>
+                  </div>
+                </li>
+
+                <li class="faq__item" data-accordion="element" >
+                  <p class="faq__text-medium text-medium">
+                    Занятия с тренером входят в абонемент?
+                  </p>
+
+                  <div class="faq__text-wrapper" data-accordion="content">
+                    <p class="faq__text text">
+                      При посещении тренажерного зала вам необходимо оплачить занятия с тренером отдельно.
+                      В зале всегда присутствует дежурный тренер, которому можно задать вопрос,
+                      получить небольшую консультацию по тренажеру или технике выполнения упражнения.
+                    </p>
+
+                  </div>
+                  <div class="faq__more">
+                    <button class="faq__plus" data-accordion="button" type="button">
+
+                    </button>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -1130,7 +1211,8 @@
                 <div class="swiper-slide">
                   <div class="reviews-slider__item">
                     <picture class="reviews-slider__avatar">
-                      <img src="img/png/avatar.png" alt="Аватар пользователя" width="80" height="80">
+                      <source media="max-width:767px" srcset="img/png/avatar-mobile.png, img/png/avatar-mobile@2x.png 2x" width="68" height="68">
+                      <img src="img/png/avatar@2x.png" srcset="img/png/avatar@2x.png 2x" alt="Аватар пользователя" width="80" height="80">
                     </picture>
 
                     <p class="reviews-slider__bold-text">
@@ -1205,16 +1287,16 @@
                 Бесплатное занятие
               </h2>
 
-              <form class="free-offer__form" action="#" method="post">
+              <form class="free-offer__form" action="#" method="post" >
                 <fieldset class="free-offer__fieldset">
                   <label>
-                    <input class="free-offer__input" type="text" name="name" placeholder="Имя">
+                    <input class="free-offer__input" type="text" name="name" placeholder="Имя" required>
                   </label>
                 </fieldset>
 
                 <fieldset class="free-offer__fieldset">
                   <label>
-                    <input class="free-offer__input" type="tel" name="tel" placeholder="Телефон">
+                    <input class="free-offer__input" type="tel" name="tel" placeholder="Телефон" title="+79999999999" maxlength="12" required pattern="^\+?[\s\-\(\)0-9]{7,19}$">
                   </label>
                 </fieldset>
 
@@ -1363,7 +1445,6 @@
         </div>
       </div>
     </footer>
-    <script src="js/init-tabs.js"></script>
     <script src="./js/main.min.js" type="module"></script>
 
   </body>

@@ -5,7 +5,7 @@
 
 .characteristic__apostrofe {
   font-weight: 400;
-  color:$color-spindle;
+  color: $color-spindle;
 }
 
 .characteristic__list {
@@ -33,7 +33,7 @@
     position: absolute;
     top: 50%;
     left: 0;
-    transform: translate(0,-50%);
+    transform: translate(0, -50%);
     width: 6px;
     height: 6px;
     background-color: $color-default-white;

@@ -44,19 +44,19 @@
 
   &::before {
     content: "Омск";
-      font-family: inherit;
-      width: 133px;
-      font-size: 48px;
-      font-weight: 600;
-      line-height: 58px;
-      letter-spacing: 0.03em;
-      margin-right: 50px;
-      margin-bottom: 25px;
-    }
+    font-family: inherit;
+    width: 133px;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 58px;
+    letter-spacing: 0.03em;
+    margin-right: 50px;
+    margin-bottom: 25px;
+  }
 }
 
 .hero__item {
-  font-family: "Roboto Condensed", "Arial, sanse serif";
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
@@ -71,56 +71,24 @@
 }
 
 //TABLET
-  @media (max-width:$vp-1199) {
-    .hero {
-      margin-top: 25px;
-    }
-
-    .hero__promo {
-      justify-content: flex-start;
-    }
-
-    .hero__picture {
-      margin-left: auto;
-    }
-
-    .hero__offer {
-      padding-left: 0;
-      margin-bottom: 0;
-    }
-
-    .hero__text-wrapper {
-      margin-top: 10px;
-      margin-right: 0;
-    }
-
-    .hero__main-title {
-      max-width: 220px;
-      font-size: 72px;
-      line-height: 86px;
-
-      &::before {
-        font-size: 34px;
-        line-height: 41px;
-        margin-right: 0;
-      }
-    }
-
-    .hero__button-wrapper {
-      width: 190px;
-      margin-top: 30px;
-    }
-
-    .hero__button {
-      padding: 20px;
-    }
-  }
 //TABLET
 
 //MOBILE
-@media (max-width:$vp-767) {
+@media (max-width: $vp-767) {
   .hero__picture {
     display: none;
+  }
+
+  .hero__main-title {
+    margin-top: 9px;
+    margin-left: 10px;
+
+    &::before {
+      font-size: 28px;
+      font-weight: 600;
+      line-height: 34px;
+      margin: 0;
+    }
   }
 
   .hero__text-wrapper {
@@ -133,12 +101,6 @@
     flex-wrap: nowrap;
   }
 
-  .hero__main-title {
-    &::before {
-      margin: 0;
-    }
-  }
-
   .hero__offer {
     width: 113px;
     position: absolute;
@@ -147,7 +109,16 @@
   }
 
   .hero__button-wrapper {
-    max-width: 100%;
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  .hero__button {
+    width: 100%;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 0.05em;
   }
 }
 //MOBILE

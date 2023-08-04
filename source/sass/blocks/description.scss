@@ -22,7 +22,7 @@
 }
 
 //TABLET
-@media (max-width:$vp-1199) {
+@media (max-width: $vp-1199) {
   .description {
     text-align: center;
     padding-top: 0;
@@ -42,3 +42,13 @@
   }
 }
 //TABLET
+@media (max-width: $vp-767) {
+  .description__bold-text {
+    padding-bottom: 28px;
+  }
+
+  .descriprion__text {
+    max-width: 258px;
+    margin-bottom: 30px;
+  }
+}

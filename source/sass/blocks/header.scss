@@ -1,6 +1,6 @@
 .header__content {
-  background: url(/img/jpeg/header-bg.jpg) no-repeat,
-        linear-gradient(-160deg, $color-dark-cerulean 40%, $color-venetian-red 100%);
+  background: url("/img/jpeg/header-bg.jpg") no-repeat,
+    linear-gradient(-160deg, $color-dark-cerulean 40%, $color-venetian-red 100%);
   background-size: cover;
   width: 100%;
   min-height: 658px;
@@ -29,10 +29,9 @@
   line-height: 31px;
   letter-spacing: 0.03em;
   color: $color-default-white;
-  }
-
+}
 //TABLET
-@media (max-width:$vp-1199) {
+@media (max-width: $vp-1199) {
   .header__content {
     padding-top: 40px;
     min-height: 554px;
@@ -52,7 +51,7 @@
 //TABLET
 
 //MOBILE
-@media (max-width:$vp-767) {
+@media (max-width: $vp-767) {
   .header__content {
     min-height: 491px;
     padding-top: 15px;

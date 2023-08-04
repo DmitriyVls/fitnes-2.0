@@ -1,3 +1,9 @@
+.promo__content {
+  .container {
+    padding-top: 140px;
+  }
+}
+
 .promo__wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -31,6 +37,8 @@
 
 .promo__link {
   display: block;
+  text-align: center;
+  border-width: 2px;
 }
 
 .promo__text-wrapper {
@@ -51,11 +59,6 @@
 
 .promo__link-button {
   width: 343px;
-}
-
-.promo__link {
-  text-align: center;
-  border-width: 2px;
 }
 
 //TABLET
@@ -99,9 +102,19 @@
   }
 }
 //TABLET
-
 //MOBILE
 @media (max-width: $vp-767) {
+  .promo__content {
+    .container {
+      padding-top: 45px;
+      padding-bottom: 65px;
+    }
+  }
+
+  .promo__description {
+    padding-bottom: 45px;
+  }
+
   .promo__bold {
     font-size: 48px;
     font-weight: 600;

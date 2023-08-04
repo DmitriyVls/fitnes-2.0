@@ -83,7 +83,6 @@
   }
 
   .contact__links {
-
     &::before {
       content: "";
       left: 10px;
@@ -97,7 +96,6 @@
 }
 
 @media (max-width: $vp-767) {
-
   .contact {
     padding: 70px 20px;
   }
@@ -109,6 +107,11 @@
 
   .contact__list {
     width: 100%;
+    margin-top: 15px;
+  }
+
+  .contact__title {
+    margin-bottom: 35px;
   }
 
   .contact__links {

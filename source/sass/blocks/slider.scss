@@ -13,18 +13,25 @@
 .slider__control {
   position: absolute;
   top: 50%;
+
+  &::after {
+    content: "";
+    width: 16px;
+    height: 32px;
+    color: $color-dark-gray;
+    font-size: 32px;
+  }
 }
 
 .slider__button {
   display: block;
   border: none;
   background-color: inherit;
-  position:  relative;
+  position: relative;
   width: 56px;
   height: 56px;
   padding: 0;
   cursor: pointer;
-  outline: none;
   border-radius: 100%;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -38,7 +45,6 @@
   &:active {
     background-color: $color-sapphire;
   }
-
 }
 
 .slider__control--left {
@@ -49,7 +55,7 @@
   right: 0;
 }
 
-@media (max-width:$vp-1199) {
+@media (max-width: $vp-1199) {
   .slider__control--left {
     left: 0;
   }
@@ -59,7 +65,7 @@
   }
 }
 
-@media (max-width:$vp-767) {
+@media (max-width: $vp-767) {
   .slider {
     .swiper-button-prev,
     .swiper-button-next {

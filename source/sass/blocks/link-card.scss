@@ -29,7 +29,6 @@
   line-height: 24px;
   color: $color-black-chambray;
   padding-top: 5px;
-
 }
 
 .link-card__price {
@@ -42,7 +41,6 @@
   padding-bottom: 55px;
   position: relative;
   z-index: 5;
-
 }
 
 .link-symbol {
@@ -53,7 +51,7 @@
   position: absolute;
   top: 30%;
   left: 50%;
-  transform: translate(-50%,-30%);
+  transform: translate(-50%, -30%);
   z-index: -1;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 100px;
@@ -78,9 +76,19 @@
 
 //MOBILE
 @media (max-width: $vp-767) {
+  .link-card {
+    padding-top: 55px;
+  }
+
   .link-card__bold {
-    font-size: 32px;
-    line-height: 38px;
+    font-size: 22px;
+    line-height: 24px;
+  }
+
+  .link-card__price {
+    padding-top: 55px;
+    font-size: 48px;
+    line-height: 72px;
   }
 }
 //MOBILE

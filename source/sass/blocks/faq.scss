@@ -2,7 +2,7 @@
   background-color: $color-ghost-white;
 
   .container {
-    padding-top: 80px;
+    padding-top: 120px;
   }
 }
 
@@ -20,35 +20,42 @@
   width: 23%;
   max-width: 260px;
   margin-right: 40px;
+
+  .tabs__control {
+    color: $color-sapphire;
+    width: 100%;
+    border: 1px solid $color-sapphire;
+    text-transform: none;
+    opacity: 1;
+
+    &::after {
+      display: none;
+    }
+
+    &.is-active {
+      color: $color-default-white;
+      background: linear-gradient(to right, $color-torch-red, $color-cobalt);
+      border-color: inherit;
+    }
+  }
 }
 
 .faq__button {
-  color: $color-sapphire;
-  width: 100%;
-  border: 1px solid $color-sapphire;
-  margin-bottom: 10px;
-  text-transform: none;
   font-size: 18px;
   font-weight: 500;
   line-height: 18px;
-  padding-top: 13px;
-  padding-bottom: 13px;
-  margin-bottom: 18px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
 }
 
-.faq__button--active {
-  color: $color-default-white;
-  background: linear-gradient(to right, $color-torch-red, $color-cobalt);
-  border-color: inherit;
-}
-
-.faq__list {
-  display: none;
+.faq__lists {
   width: 75%;
   max-width: 860px;
 }
 
-.faq__list--active {
+.faq__list {
+  width: 100%;
   display: block;
 }
 
@@ -72,11 +79,11 @@
 
 .faq__text {
   width: 80%;
+  max-height: 100%;
   max-width: 660px;
   font-size: 18px;
   font-weight: 300;
   line-height: 25px;
-  display: none;
 }
 
 .faq__text--active {
@@ -103,7 +110,7 @@
 
   &::after,
   &::before {
-    content:"";
+    content: "";
     width: 18px;
     height: 1px;
     position: absolute;
@@ -132,7 +139,8 @@
   }
 }
 
-.faq__plus--active {
+.faq__item.is-active .faq__plus {
+
   background-color: $color-resolution-blue;
 
   &::before {
@@ -141,7 +149,6 @@
 
   &::after {
     display: none;
-
   }
 }
 
@@ -185,18 +192,14 @@
     }
   }
 
-  .faq__list {
+  .faq__lists {
     width: 100%;
     margin-top: 30px;
   }
-
-
 }
 //TABLET
-
 //MOBILE
 @media (max-width: $vp-767) {
-
   .faq__title {
     font-size: 32px;
     font-weight: 600;

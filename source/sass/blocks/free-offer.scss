@@ -53,11 +53,10 @@
     box-shadow: 0 0 0 2px $color-default-white;
     border-bottom: none;
   }
+}
 
-  &:invalid {
-    border-color: $color-torch-red;
-
-  }
+.free-offer__input--invalid {
+  border-color: $color-torch-red;
 }
 
 .free-offer__button-wrapper {
@@ -72,15 +71,17 @@
 
 //TABLET
 @media (max-width: $vp-1199) {
-
   .free-offer__form {
+    display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 472px;
+    gap: 0 30px;
   }
 
   .free-offer {
     width: 100%;
     background-color: $color-sapphire;
-
   }
 
   .free-offer__fieldset {
@@ -93,13 +94,6 @@
     margin: 0 auto;
   }
 
-  .free-offer__form {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 472px;
-    gap: 0 30px;
-  }
-
   .free-offer__button-wrapper {
     width: 472px;
     margin-top: 30px;
@@ -107,6 +101,10 @@
 }
 
 @media (max-width: $vp-767) {
+  .free-offer {
+    padding-top: 35px;
+  }
+
   .free-offer__wrapper {
     padding: 0 20px;
   }
@@ -127,5 +125,3 @@
     width: 100%;
   }
 }
-
-

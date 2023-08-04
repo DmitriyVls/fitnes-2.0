@@ -1,5 +1,6 @@
 .social__item {
   margin-right: 11px;
+
   &:last-child {
     margin-right: 0;
   }
@@ -19,7 +20,7 @@
     background-color: $color-egyptian-blue;
 
     .social__svg {
-        fill: $color-default-white;
+      fill: $color-default-white;
     }
   }
 
@@ -28,10 +29,10 @@
 
     .social__svg {
       fill: $color-default-white;
-  }
+    }
   }
 }
 
 .social__svg {
-  fill:$color-black-russian;
- }
+  fill: $color-black-russian;
+}

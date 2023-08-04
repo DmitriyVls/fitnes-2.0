@@ -1,14 +1,10 @@
 .features__content {
   background-color: $color-ghost-white;
-
-  .container {
-    padding-top: 60px;
-  }
 }
 
 .features__title {
   text-align: center;
-  margin-bottom: 27px;
+  margin-bottom: 12px;
 }
 
 .features__container {
@@ -46,7 +42,7 @@
 }
 
 //TABLET
-@media (max-width:$vp-1199) {
+@media (max-width: $vp-1199) {
   .features__content {
     .container {
       padding-top: 77px;
@@ -60,11 +56,12 @@
 //TABLET
 
 //MOBILE
-@media (max-width:$vp-767) {
+@media (max-width: $vp-767) {
   .features__content {
     .container {
       max-width: 320px;
       margin: 0 auto;
+      padding-top: 40px;
     }
   }
 }

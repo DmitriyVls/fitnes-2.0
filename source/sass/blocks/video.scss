@@ -6,7 +6,6 @@
   left: 50%;
   transform: translate(-50%, -90%);
   background-image: url("../img/jpeg/video-preview.jpg");
-
 }
 
 .video__wrapper {
@@ -20,7 +19,7 @@
   z-index: 15;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 
 .video__button {
@@ -31,6 +30,20 @@
   background: linear-gradient(-290deg, $color-dark-cerulean 10%, $color-venetian-red 100%);
   border-radius: 100%;
 
+  &:hover,
+  &:focus-visible,
+  &:active {
+    background: none;
+    background-color: $color-default-white;
+
+    .video__svg {
+      fill: $color-sapphire;
+    }
+  }
+}
+
+.video__svg {
+  fill: $color-default-white;
 }
 
 .video__media {
@@ -44,7 +57,7 @@
   display: none;
 }
 
-@media (max-width:$vp-1199) {
+@media (max-width: $vp-1199) {
   .video {
     width: 266px;
     height: 167px;
@@ -58,8 +71,8 @@
   }
 }
 
-@media (max-width:$vp-767) {
-  .video{
+@media (max-width: $vp-767) {
+  .video {
     width: 320px;
     margin: 0 auto;
     position: static;

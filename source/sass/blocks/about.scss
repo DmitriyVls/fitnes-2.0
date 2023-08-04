@@ -19,7 +19,7 @@
 }
 
 //TABLET
-@media (max-width:$vp-1199) {
+@media (max-width: $vp-1199) {
   .about__wrapper {
     display: block;
   }
@@ -37,19 +37,21 @@
 //TABLET
 
 //MOBILE
-@media (max-width:$vp-767) {
+@media (max-width: $vp-767) {
   .about__content {
-    .container{
+    .container {
       padding-left: 0;
       padding-right: 0;
+      max-width: none;
+      padding-top: 65px;
+      padding-bottom: 0;
     }
   }
 
-  .about__content{
-
-    .container {
-      max-width: none;
-    }
+  .about__description {
+    max-width: 100%;
+    padding: 0 0 0 10px;
+    text-align: left;
   }
 }
 //MOBILE

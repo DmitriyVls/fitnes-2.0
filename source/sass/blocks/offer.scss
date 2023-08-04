@@ -5,14 +5,14 @@
 
 .offer__content {
   background: url("/img/png/offer-bg.png") 100% 130%,
-        $color-ghost-white;
+    $color-ghost-white;
   background-repeat: no-repeat;
 }
 
 .offer__title {
-text-align: center;
-margin: 0;
-margin-bottom: 10px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 @media (max-width: $vp-1199) {
@@ -25,5 +25,9 @@ margin-bottom: 10px;
 @media (max-width: $vp-767) {
   .offer__content {
     background-image: none;
+
+    .container {
+      padding-top: 135px;
+    }
   }
 }
