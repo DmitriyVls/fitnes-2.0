@@ -2614,6 +2614,7 @@ button,
 }
 
 .time-data__apostrofe {
+  display: block;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -2969,10 +2970,10 @@ button,
   background: -webkit-gradient(linear, left bottom, left top, color-stop(1%, #0041ca), to(#d10a42));
   background: linear-gradient(to top, #0041ca 1%, #d10a42 100%);
   background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
+  -webkit-background-clip: text; /* stylelint-disable-line */
+  -webkit-text-fill-color: transparent; /* stylelint-disable-line */
+  -moz-background-clip: text; /* stylelint-disable-line */
+  -moz-text-fill-color: transparent; /* stylelint-disable-line */
 }
 
 .feature__apostrofe {
