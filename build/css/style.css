@@ -1968,7 +1968,7 @@ button,
   line-height: 27px;
 }
 
-.descriprion__text {
+.description__text {
   margin-bottom: 10px;
 }
 
@@ -1978,7 +1978,7 @@ button,
     padding-top: 0;
     padding-left: 0;
   }
-  .descriprion__text-additional {
+  .descriprion__text--additional {
     display: none;
   }
   .description__bold-text {
@@ -2309,7 +2309,7 @@ button,
   }
 }
 
-.tabs__control {
+.tabs__button {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 20px;
   font-weight: 400;
@@ -2324,11 +2324,11 @@ button,
   padding-bottom: 20px;
   margin-right: 30px;
 }
-.tabs__control:hover, .tabs__control:focus {
+.tabs__button:hover, .tabs__button:focus {
   outline: none;
   opacity: 1;
 }
-.tabs__control:hover::after, .tabs__control:focus::after {
+.tabs__button:hover::after, .tabs__button:focus::after {
   content: "";
   width: 100%;
   position: absolute;
@@ -2337,12 +2337,12 @@ button,
   z-index: 5;
   border-bottom: 1px solid #ed0233;
 }
-.tabs__control.is-active {
+.tabs__button.is-active {
   display: block;
   opacity: 1;
   pointer-events: none;
 }
-.tabs__control.is-active::after {
+.tabs__button.is-active::after {
   content: "";
   width: 100%;
   position: absolute;
@@ -2351,7 +2351,7 @@ button,
   z-index: 5;
   border-bottom: 1px solid #ed0233;
 }
-.tabs__control:last-child {
+.tabs__button:last-child {
   margin-right: 0;
 }
 
@@ -2423,14 +2423,12 @@ button,
     margin-right: 0;
     margin-bottom: 37px;
   }
-  .tabs__control {
-    font-size: 18px;
-    line-height: 27px;
-    padding-bottom: 10px;
-  }
   .tabs__button {
     padding: 25px 0;
     bottom: 40px;
+    font-size: 18px;
+    line-height: 27px;
+    padding-bottom: 10px;
   }
 }
 @media (max-width: 767px) {

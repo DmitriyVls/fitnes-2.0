@@ -24,7 +24,7 @@
   }
 }
 
-.tabs__control {
+.tabs__button {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 20px;
   font-weight: 400;
@@ -132,15 +132,12 @@
     margin-bottom: 37px;
   }
 
-  .tabs__control {
-    font-size: 18px;
-    line-height: 27px;
-    padding-bottom: 10px;
-  }
-
   .tabs__button {
     padding: 25px 0;
     bottom: 40px;
+    font-size: 18px;
+    line-height: 27px;
+    padding-bottom: 10px;
   }
 }
 
