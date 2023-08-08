@@ -56,11 +56,11 @@
     font-size: 42px;
     font-weight: 600;
     line-height: 50px;
-}
+  }
 
   .features__list {
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(3,min-content);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, min-content);
   }
 }
 //TABLET
@@ -76,9 +76,9 @@
   }
 
   .features h2 {
-      font-size: 32px;
-      font-weight: 600;
-      line-height: 38px;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 38px;
   }
 
   .features__list {
