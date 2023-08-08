@@ -13,16 +13,17 @@
   }
 }
 
-.promotion__bold {
+.promotion h3 {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 26px;
   font-weight: 700;
   line-height: 25px;
   padding-bottom: 10px;
   color: $color-sapphire;
+  margin: 0;
 }
 
-.promotion__text {
+.promotion p {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -68,7 +69,7 @@
     }
   }
 
-  .promotion__text {
+  .promotion p {
     padding-right: 0;
   }
 }

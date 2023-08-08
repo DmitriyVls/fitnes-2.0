@@ -1,4 +1,4 @@
-.page__body {
+body {
   font-family: "Alumni Sans", "Arial", sans-serif;
 }
 
@@ -122,7 +122,7 @@
   text-transform: uppercase;
 }
 
-.button-dark-bg {
+.--dark-bg {
   outline: none;
 
   &:hover,
@@ -140,7 +140,7 @@
   }
 }
 
-.button-blue-bg {
+.--blue-bg {
   outline: none;
 
   &:hover,
@@ -157,8 +157,8 @@
   }
 }
 
-.link-dark-bg,
-.link-white-bg {
+.--link-dark,
+.--link-white {
   outline: none;
   padding: 5px;
 

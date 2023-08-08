@@ -1,4 +1,4 @@
-.about__content {
+.about {
   .container {
     padding-top: 75px;
     padding-bottom: 210px;
@@ -38,7 +38,7 @@
 
 //MOBILE
 @media (max-width: $vp-767) {
-  .about__content {
+  .about {
     .container {
       padding-left: 0;
       padding-right: 0;

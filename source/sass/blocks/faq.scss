@@ -1,4 +1,4 @@
-.faq__content {
+.faq{
   background-color: $color-ghost-white;
 
   .container {
@@ -11,7 +11,14 @@
   flex-wrap: wrap;
 }
 
-.faq__title {
+.faq h2 {
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 65px;
+  letter-spacing: 0.03em;
+  color: $color-sapphire;
+  margin: 0;
   width: 100%;
   margin-bottom: 40px;
 }
@@ -69,15 +76,17 @@
   }
 }
 
-.faq__text-medium {
+.faq h3 {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 24px;
   font-weight: 500;
   line-height: 29px;
   padding-bottom: 15px;
+  margin: 0;
 }
 
-.faq__text {
+.faq__text-wrapper p {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   width: 80%;
   max-height: 100%;
   max-width: 660px;
@@ -90,22 +99,16 @@
   display: block;
 }
 
-.faq__more {
-  width: 42px;
-  height: 42px;
-  position: absolute;
-  top: 20px;
-  right: 0;
-}
-
 .faq__plus {
   display: block;
   width: 42px;
   height: 42px;
+  top: 20px;
+  right: 0;
   border-radius: 100%;
   background-color: inherit;
   border-color: $color-sapphire;
-  position: relative;
+  position: absolute;
   cursor: pointer;
 
   &::after,
@@ -140,7 +143,6 @@
 }
 
 .faq__item.is-active .faq__plus {
-
   background-color: $color-resolution-blue;
 
   &::before {
@@ -164,7 +166,7 @@
     display: block;
   }
 
-  .faq__title {
+  .faq h2 {
     font-size: 42px;
     font-weight: 600;
     line-height: 50px;
@@ -200,7 +202,7 @@
 //TABLET
 //MOBILE
 @media (max-width: $vp-767) {
-  .faq__title {
+  .faq h2 {
     font-size: 32px;
     font-weight: 600;
     line-height: 38px;
@@ -218,16 +220,20 @@
     }
   }
 
-  .faq__text-medium {
+  .faq h3 {
     max-width: 238px;
     font-size: 18px;
     font-weight: 500;
     line-height: 22px;
   }
 
-  .faq__text- {
+  .faq__text-wrapper p {
     width: 100%;
     max-width: none;
+    font-family: Roboto Condensed;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
   }
 }
 //MODILE

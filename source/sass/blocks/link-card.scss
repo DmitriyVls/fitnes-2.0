@@ -41,25 +41,25 @@
   padding-bottom: 55px;
   position: relative;
   z-index: 5;
+
+  &::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    z-index: -1;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 150px;
+    color: $color-whisper;
+  }
 }
 
 .link-symbol {
   color: $color-sapphire;
 }
-
-.link-card__duplicate {
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -30%);
-  z-index: -1;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-size: 100px;
-  font-weight: 700;
-  line-height: 150px;
-  color: $color-whisper;
-}
-
 //TABLET
 @media (max-width: $vp-1199) {
   .link-card__bold {

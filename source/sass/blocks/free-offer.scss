@@ -4,7 +4,14 @@
   position: relative;
 }
 
-.free-offer__title {
+.free-offer h2 {
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 65px;
+  letter-spacing: 0.03em;
+  color: $color-sapphire;
+  margin: 0;
   color: $color-default-white;
   max-width: 410px;
 }
@@ -16,7 +23,7 @@
   gap: 0 30px;
 }
 
-.free-offer__fieldset {
+.free-offer__input-wrapper {
   max-width: 190px;
   margin: 0;
   border: 0;
@@ -29,7 +36,7 @@
   }
 }
 
-.free-offer__input {
+.free-offer input {
   width: 100%;
   background-color: inherit;
   border: none;
@@ -59,12 +66,9 @@
   border-color: $color-torch-red;
 }
 
-.free-offer__button-wrapper {
-  width: 410px;
-  margin-top: 30px;
-}
-
 .free-offer__button {
+  margin-top: 30px;
+  max-width: 410px;
   width: 100%;
   border-width: 3px;
 }
@@ -79,30 +83,41 @@
     gap: 0 30px;
   }
 
+  .free-offer h2 {
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 50px;
+  }
+
   .free-offer {
     width: 100%;
     background-color: $color-sapphire;
   }
 
-  .free-offer__fieldset {
+  .free-offer__input-wrapper {
     max-width: 206px;
     margin-top: 40px;
+  }
+
+  .free-offer__button {
+    max-width: none;
   }
 
   .free-offer__wrapper {
     max-width: 472px;
     margin: 0 auto;
   }
-
-  .free-offer__button-wrapper {
-    width: 472px;
-    margin-top: 30px;
-  }
 }
 
 @media (max-width: $vp-767) {
   .free-offer {
     padding-top: 35px;
+  }
+
+  .free-offer h2 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 38px;
   }
 
   .free-offer__wrapper {
@@ -113,12 +128,8 @@
     display: block;
   }
 
-  .free-offer__fieldset {
+  .free-offer__input-wrapper {
     max-width: 100%;
-  }
-
-  .free-offer__button-wrapper {
-    width: 100%;
   }
 
   .free-offer__button {

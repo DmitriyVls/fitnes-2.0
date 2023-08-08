@@ -7,10 +7,16 @@
   margin: 0 auto;
 }
 
-.trainers__title {
+.trainers h2 {
   max-width: 1160px;
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 65px;
+  letter-spacing: 0.03em;
+  color: $color-sapphire;
   margin: 0 auto;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .trainers__slider {
@@ -22,7 +28,6 @@
 
 .trainers__item {
   position: relative;
-  padding-top: 30px;
 }
 
 .trainers__link {
@@ -49,7 +54,10 @@
     }
 
     .trainers__text-bold--no-hover {
-      display: none;
+      padding-top: 0;
+      position: relative;
+      top: 35px;
+      z-index: 25;
     }
 
     &.mask {
@@ -92,7 +100,6 @@
     max-width: 1199px;
   }
 
-
   .trainers__slider {
     max-width: 800px;
     margin: 0 auto;
@@ -104,9 +111,12 @@
     margin: 0 auto;
   }
 
-  .trainers__title {
+  .trainers h2 {
     text-align: center;
     padding-bottom: 48px;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 50px;
   }
 
   .trainers__list {
@@ -114,8 +124,10 @@
     padding: 0;
   }
 
-  .trainers__item {
-    padding-top: 0;
+  .trainers__picture {
+    img {
+      min-height: 295px;
+    }
   }
 }
 
@@ -124,6 +136,12 @@
     margin: 0 auto;
     padding: 0;
     padding-bottom: 70px;
+  }
+
+  .trainers h2 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 38px;
   }
 
   .trainers__container {
@@ -137,10 +155,17 @@
 
   .trainers__link {
     max-width: 226px;
+    min-height: 274px;
   }
 
   .trainers__text-bold-inner {
     padding-top: 200px;
     text-align: center;
+  }
+
+  .trainers__picture {
+    img {
+      min-height: 274px;
+    }
   }
 }
