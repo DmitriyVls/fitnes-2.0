@@ -1,0 +1,171 @@
+.trainers__wrapper {
+  padding-bottom: 105px;
+}
+
+.trainers__container {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.trainers h2 {
+  max-width: 1160px;
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 65px;
+  letter-spacing: 0.03em;
+  color: $color-sapphire;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.trainers__slider {
+  max-width: 1300px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 70px;
+}
+
+.trainers__item {
+  position: relative;
+}
+
+.trainers__link {
+  display: block;
+  width: 260px;
+  min-height: 295px;
+  outline: none;
+
+  &.mask {
+    &::before {
+      visibility: hidden;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    position: relative;
+    z-index: 16;
+
+    .trainers__characteristic {
+      display: block;
+      position: relative;
+      z-index: 15;
+    }
+
+    .trainers__text-bold--no-hover {
+      padding-top: 0;
+      position: relative;
+      top: 35px;
+      z-index: 25;
+    }
+
+    &.mask {
+      &::before {
+        visibility: visible;
+      }
+    }
+  }
+}
+
+.trainers__picture {
+  position: absolute;
+  z-index: -1;
+}
+
+.trainers__text-bold {
+  text-align: center;
+  color: $color-default-white;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+}
+
+.trainers__text-bold-inner {
+  padding-top: 251px;
+}
+
+.trainers__characteristic {
+  display: none;
+}
+
+.trainers__left {
+  left: -100px;
+}
+
+@media (max-width: $vp-1199) {
+  .trainers__wrapper {
+    padding-bottom: 100px;
+    max-width: 1199px;
+  }
+
+  .trainers__slider {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .trainers__container {
+    max-width: 566px;
+    margin: 0 auto;
+  }
+
+  .trainers h2 {
+    text-align: center;
+    padding-bottom: 48px;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 50px;
+  }
+
+  .trainers__list {
+    max-width: 580px;
+    padding: 0;
+  }
+
+  .trainers__picture {
+    img {
+      min-height: 295px;
+    }
+  }
+}
+
+@media (max-width: $vp-767) {
+  .trainers__wrapper {
+    margin: 0 auto;
+    padding: 0;
+    padding-bottom: 70px;
+  }
+
+  .trainers h2 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 38px;
+  }
+
+  .trainers__container {
+    max-width: 226px;
+    margin: 0 auto;
+  }
+
+  .trainers__item {
+    margin-right: 0;
+  }
+
+  .trainers__link {
+    max-width: 226px;
+    min-height: 274px;
+  }
+
+  .trainers__text-bold-inner {
+    padding-top: 200px;
+    text-align: center;
+  }
+
+  .trainers__picture {
+    img {
+      min-height: 274px;
+    }
+  }
+}

@@ -1,0 +1,129 @@
+.feature__wrapper {
+  width: 360px;
+  display: flex;
+  align-items: center;
+}
+
+.feature__clarification {
+  position: relative;
+  padding-right: 37px;
+}
+
+.feature__bold {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 71px;
+  font-weight: 700;
+  line-height: 107px;
+  background: linear-gradient(to top, $color-cobalt 1%, $color-crimson 100%);
+  background-clip: text;
+  -webkit-background-clip: text;/* stylelint-disable-line */
+  -webkit-text-fill-color: transparent;/* stylelint-disable-line */
+  -moz-background-clip: text;/* stylelint-disable-line */
+  -moz-text-fill-color: transparent;/* stylelint-disable-line */
+}
+
+.feature__apostrofe {
+  position: absolute;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: $color-persian-blue;
+  bottom: 0;
+  z-index: 15;
+}
+
+.feature h3 {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 33px;
+  color: $color-sapphire;
+  margin: 0;
+}
+
+.feature__description p {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+  color: $color-sapphire;
+}
+
+
+//TABLET
+@media (max-width: $vp-1199) {
+  .feature {
+    max-width: 330px;
+  }
+
+  .feature__description {
+    max-width: 230px;
+  }
+
+  .feature__bold {
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 87px;
+  }
+
+  .feature__apostrofe {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+  }
+
+  .feature h3 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+
+  .feature__description p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+  }
+
+  .features__first-line {
+    padding: 0;
+    margin: 0;
+
+    &::after {
+      display: none;
+    }
+  }
+}
+//TABLET
+//MOBILE
+@media (max-width: $vp-767) {
+  .feature__wrapper {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 10px;
+    }
+  }
+
+  .feature__clarification {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+
+  .feature__description {
+    margin: 0 auto;
+  }
+
+  .feature__description p {
+    padding-top: 5px;
+  }
+
+  .feature__apostrofe {
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+//MOBILE

@@ -1,0 +1,76 @@
+.description {
+  padding-top: 15px;
+  padding-left: 60px;
+}
+
+.description h2 {
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  letter-spacing: 0.03em;
+  color: $color-sapphire;
+  margin: 0;
+  font-size: 48px;
+  line-height: 58px;
+}
+
+.description h3 {
+  margin-top: 7px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  margin-bottom: 40px;
+}
+
+.description p {
+  margin-bottom: 10px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  color: $color-sapphire;
+}
+
+//TABLET
+@media (max-width: $vp-1199) {
+  .description {
+    text-align: center;
+    padding-top: 0;
+    padding-left: 0;
+  }
+
+  .descriprion__text--additional {
+    display: none;
+  }
+
+  .description h2 {
+    margin-bottom: 35px;
+    font-size: 42px;
+    line-height: 50px;
+  }
+
+  .description__bold-text {
+    padding-bottom: 35px;
+
+    &::after {
+      margin-top: 0;
+    }
+  }
+}
+//TABLET
+@media (max-width: $vp-767) {
+  .description__bold-text {
+    padding-bottom: 28px;
+  }
+
+  .description h2 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 38px;
+    margin-bottom: 28px;
+  }
+
+  .descriprion__text {
+    max-width: 258px;
+    margin-bottom: 30px;
+  }
+}

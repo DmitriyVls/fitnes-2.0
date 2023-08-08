@@ -1,0 +1,37 @@
+.offer {
+  position: relative;
+  z-index: 5;
+  background: url("/img/png/offer-bg.png") 100% 130%,
+    $color-ghost-white;
+  background-repeat: no-repeat;
+}
+
+.offer h2 {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 65px;
+  letter-spacing: 0.03em;
+  color: $color-sapphire;
+  margin: 0;
+}
+
+@media (max-width: $vp-1199) {
+  .offer__content {
+    background-image: url("/img/png/offer-bg-tablet.png");
+    background-position: 100% 100%;
+  }
+}
+
+@media (max-width: $vp-767) {
+  .offer {
+    background-image: none;
+
+    .container {
+      padding-top: 135px;
+    }
+  }
+}

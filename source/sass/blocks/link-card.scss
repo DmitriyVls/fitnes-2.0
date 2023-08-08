@@ -1,0 +1,94 @@
+.link-card {
+  display: block;
+  text-align: center;
+  padding: 80px 0;
+  outline: none;
+  border: 7px solid $color-default-white;
+
+  &:hover,
+  &:focus {
+    border-image: linear-gradient(to right, $color-torch-red, $color-cobalt);
+    border-image-slice: 1;
+  }
+}
+
+.link-card__bold {
+  display: block;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 40px;
+  color: $color-sapphire;
+}
+
+.link-card__time {
+  display: block;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: $color-black-chambray;
+  padding-top: 5px;
+}
+
+.link-card__price {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 90px;
+  color: $color-egyptian-blue;
+  padding-top: 55px;
+  padding-bottom: 55px;
+  position: relative;
+  z-index: 5;
+
+  &::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    z-index: -1;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 150px;
+    color: $color-whisper;
+  }
+}
+
+.link-symbol {
+  color: $color-sapphire;
+}
+//TABLET
+@media (max-width: $vp-1199) {
+  .link-card__bold {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 29px;
+  }
+
+  .link-card__price {
+    padding-top: 70px;
+  }
+}
+//TABLET
+
+//MOBILE
+@media (max-width: $vp-767) {
+  .link-card {
+    padding-top: 55px;
+  }
+
+  .link-card__bold {
+    font-size: 22px;
+    line-height: 24px;
+  }
+
+  .link-card__price {
+    padding-top: 55px;
+    font-size: 48px;
+    line-height: 72px;
+  }
+}
+//MOBILE

@@ -1,0 +1,138 @@
+.contact {
+  width: 50%;
+  padding-left: 120px;
+  padding-top: 56px;
+  padding-bottom: 70px;
+  border-top: 1px $color-light-slate-grey;
+}
+
+.contact h2 {
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 65px;
+  letter-spacing: 0.03em;
+  color: $color-sapphire;
+  margin: 0;
+}
+
+.contact__wrapper-list {
+  display: flex;
+}
+
+.contact__item {
+  width: 50%;
+  max-width: 500px;
+  flex-grow: 1;
+  margin: 0 auto;
+  margin-top: 22px;
+}
+
+.contact__links {
+  padding-left: 60px;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 3px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background-color: $color-light-slate-grey;
+  }
+}
+
+.contact__wrapper {
+  margin-bottom: 25px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.contact h3 {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: $color-sapphire;
+  margin: 0;
+}
+
+.contact p {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  padding-top: 5px;
+}
+
+@media (max-width: $vp-1199) {
+  .contact {
+    width: 100%;
+    max-width: 472px;
+    margin: 0 auto;
+    padding: 70px 0;
+    border: none;
+  }
+
+  .contact h2 {
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 50px;
+  }
+
+  .contact h3  {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+
+  .contact p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+  }
+
+  .contact__wrapper {
+    margin-top: 25px;
+  }
+
+  .contact__links {
+    &::before {
+      content: "";
+      left: 10px;
+    }
+  }
+}
+
+@media (max-width: $vp-767) {
+  .contact {
+    padding: 70px 20px;
+  }
+
+  .contact__wrapper-list {
+    display: block;
+    width: 100%;
+  }
+
+  .contact__item {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .contact h2 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 38px;
+    margin-bottom: 35px;
+  }
+
+  .contact__links {
+    padding: 0;
+
+    &::before {
+      display: none;
+    }
+  }
+}
