@@ -2000,7 +2000,11 @@ body {
   margin-bottom: 40px;
 }
 
+<<<<<<< HEAD
 .description p {
+=======
+.description__text {
+>>>>>>> 97b5c2962faf7e4745d95535962ed49acbe00a6a
   margin-bottom: 10px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 16px;
@@ -2357,7 +2361,7 @@ body {
   }
 }
 
-.tabs__control {
+.tabs__button {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 20px;
   font-weight: 400;
@@ -2373,11 +2377,11 @@ body {
   padding-bottom: 20px;
   margin-right: 30px;
 }
-.tabs__control:hover, .tabs__control:focus {
+.tabs__button:hover, .tabs__button:focus {
   outline: none;
   opacity: 1;
 }
-.tabs__control:hover::after, .tabs__control:focus::after {
+.tabs__button:hover::after, .tabs__button:focus::after {
   content: "";
   width: 100%;
   position: absolute;
@@ -2386,12 +2390,12 @@ body {
   z-index: 5;
   border-bottom: 1px solid #ed0233;
 }
-.tabs__control.is-active {
+.tabs__button.is-active {
   display: block;
   opacity: 1;
   pointer-events: none;
 }
-.tabs__control.is-active::after {
+.tabs__button.is-active::after {
   content: "";
   width: 100%;
   position: absolute;
@@ -2400,7 +2404,7 @@ body {
   z-index: 5;
   border-bottom: 1px solid #ed0233;
 }
-.tabs__control:last-child {
+.tabs__button:last-child {
   margin-right: 0;
 }
 
@@ -2475,8 +2479,14 @@ body {
   .tabs__button {
     padding: 17px 0;
     bottom: 40px;
+<<<<<<< HEAD
     font-size: 12px;
     line-height: 27px;
+=======
+    font-size: 18px;
+    line-height: 27px;
+    padding-bottom: 10px;
+>>>>>>> 97b5c2962faf7e4745d95535962ed49acbe00a6a
   }
 }
 @media (max-width: 767px) {
