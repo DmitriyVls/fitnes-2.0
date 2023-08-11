@@ -19,7 +19,7 @@
   &:hover {
     background-color: $color-egyptian-blue;
 
-    .social__svg {
+    .svg {
       fill: $color-default-white;
     }
   }
@@ -27,12 +27,12 @@
   &:focus {
     background-color: $color-sapphire;
 
-    .social__svg {
+    .svg {
       fill: $color-default-white;
     }
   }
 }
 
-.social__svg {
+.svg {
   fill: $color-black-russian;
 }
