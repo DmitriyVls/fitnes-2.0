@@ -27,24 +27,6 @@
   width: 23%;
   max-width: 260px;
   margin-right: 40px;
-
-  .tabs__control {
-    color: $color-sapphire;
-    width: 100%;
-    border: 1px solid $color-sapphire;
-    text-transform: none;
-    opacity: 1;
-
-    &::after {
-      display: none;
-    }
-
-    &.is-active {
-      color: $color-default-white;
-      background: linear-gradient(to right, $color-torch-red, $color-cobalt);
-      border-color: inherit;
-    }
-  }
 }
 
 .faq__button {
@@ -54,6 +36,21 @@
   padding-top: 15px;
   padding-bottom: 15px;
   margin-bottom: 15px;
+  color: $color-sapphire;
+  width: 100%;
+  border: 1px solid $color-sapphire;
+  text-transform: none;
+  opacity: 1;
+
+  &::after {
+    display: none;
+  }
+
+  &.is-active {
+    color: $color-default-white;
+    background: linear-gradient(to right, $color-torch-red, $color-cobalt);
+    border-color: inherit;
+  }
 }
 
 .faq__lists {

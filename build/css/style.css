@@ -1591,9 +1591,6 @@ body {
 
 @media (max-width: 1199px) {
   .header {
-    min-height: auto;
-  }
-  .header {
     padding-top: 40px;
     min-height: 554px;
   }
@@ -2015,7 +2012,7 @@ body {
     padding-top: 0;
     padding-left: 0;
   }
-  .descriprion__text--additional {
+  .--additional {
     display: none;
   }
   .description h2 {
@@ -2040,7 +2037,7 @@ body {
     line-height: 38px;
     margin-bottom: 28px;
   }
-  .descriprion__text {
+  .descriprion p {
     max-width: 258px;
     margin-bottom: 30px;
   }
@@ -2308,7 +2305,6 @@ body {
   line-height: 65px;
   letter-spacing: 0.03em;
   color: #102654;
-  margin: 0;
 }
 
 @media (max-width: 1199px) {
@@ -3251,7 +3247,6 @@ body {
 @media (max-width: 1199px) {
   .main-feature {
     width: 442px;
-    margin: 50px 0;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-column: 1/3;
@@ -3463,22 +3458,6 @@ body {
   max-width: 260px;
   margin-right: 40px;
 }
-.faq__buttons .tabs__control {
-  color: #102654;
-  width: 100%;
-  border: 1px solid #102654;
-  text-transform: none;
-  opacity: 1;
-}
-.faq__buttons .tabs__control::after {
-  display: none;
-}
-.faq__buttons .tabs__control.is-active {
-  color: #ffffff;
-  background: -webkit-gradient(linear, left top, right top, from(#ed0233), to(#0041ca));
-  background: linear-gradient(to right, #ed0233, #0041ca);
-  border-color: inherit;
-}
 
 .faq__button {
   font-size: 18px;
@@ -3487,6 +3466,20 @@ body {
   padding-top: 15px;
   padding-bottom: 15px;
   margin-bottom: 15px;
+  color: #102654;
+  width: 100%;
+  border: 1px solid #102654;
+  text-transform: none;
+  opacity: 1;
+}
+.faq__button::after {
+  display: none;
+}
+.faq__button.is-active {
+  color: #ffffff;
+  background: -webkit-gradient(linear, left top, right top, from(#ed0233), to(#0041ca));
+  background: linear-gradient(to right, #ed0233, #0041ca);
+  border-color: inherit;
 }
 
 .faq__lists {
@@ -3646,7 +3639,6 @@ body {
   .faq__text-wrapper p {
     width: 100%;
     max-width: none;
-    font-family: Roboto Condensed;
     font-size: 16px;
     font-weight: 300;
     line-height: 22px;
@@ -3817,7 +3809,6 @@ body {
   font-weight: 600;
   line-height: 65px;
   letter-spacing: 0.03em;
-  color: #102654;
   margin: 0;
   color: #ffffff;
   max-width: 410px;
