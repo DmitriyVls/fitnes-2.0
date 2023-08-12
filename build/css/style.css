@@ -3155,14 +3155,17 @@ body {
 }
 
 .promotions__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  display: -ms-grid;
+  display: grid;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-grid-columns: 560px 560px;
+  grid-template-columns: 560px 560px;
+  -ms-grid-rows: 1fr -webkit-min-content;
+  -ms-grid-rows: 1fr min-content;
+  grid-template-rows: 1fr -webkit-min-content;
+  grid-template-rows: 1fr min-content;
 }
 
 @media (max-width: 1199px) {
@@ -3280,6 +3283,9 @@ body {
   }
 }
 .main-promotion {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-row: -1/1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

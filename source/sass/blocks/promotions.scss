@@ -18,9 +18,10 @@
 }
 
 .promotions__list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   justify-content: space-between;
+  grid-template-columns: 560px 560px;
+  grid-template-rows: 1fr min-content;
 }
 
 //TABLET
