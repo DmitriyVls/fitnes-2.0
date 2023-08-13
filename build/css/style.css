@@ -2240,6 +2240,17 @@ body {
   display: block;
   text-align: center;
   border-width: 2px;
+  outline: none;
+}
+.promo__link:hover, .promo__link:focus-visible {
+  background-color: #ffffff;
+  color: #103aae;
+}
+.promo__link:active {
+  color: #000000;
+}
+.promo__link:disabled {
+  opacity: 0.5;
 }
 
 .promo__text-wrapper {
@@ -2258,20 +2269,6 @@ body {
 .promo__link-button {
   width: 343px;
   margin-top: 55px;
-}
-
-.promo__link {
-  outline: none;
-}
-.promo__link:hover, .promo__link:focus-visible {
-  background-color: #ffffff;
-  color: #103aae;
-}
-.promo__link:active {
-  color: #000000;
-}
-.promo__link:disabled {
-  opacity: 0.5;
 }
 
 @media (max-width: 1199px) {
