@@ -32,6 +32,10 @@
     }
   }
 
+  .promotions__list {
+    grid-template-columns: 324px 324px;
+  }
+
   .promotions h2 {
     font-size: 42px;
     font-weight: 600;
@@ -52,6 +56,10 @@
 @media (max-width: $vp-767) {
   .promotions__other {
     padding-top: 25px;
+  }
+
+  .promotions__list {
+    display: block;
   }
 
   .promotions h2 {

@@ -19,6 +19,8 @@
   font-weight: 700;
   line-height: 100px;
   color: $color-default-white;
+  position: relative;
+  padding-bottom: 25px;
 }
 
 .main-feature__apostrofe {
@@ -26,6 +28,10 @@
   font-weight: 700;
   line-height: 39px;
   color: $color-default-white;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 0);
 }
 
 .main-feature__text {

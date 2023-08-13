@@ -43,6 +43,8 @@
   color: $color-default-white;
   padding: 5px;
   border: 2px solid $color-black-russian;
+
+  @include link-dark;
 }
 
 .footer__social {

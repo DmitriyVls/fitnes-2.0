@@ -42,6 +42,8 @@
   text-transform: none;
   opacity: 1;
 
+  @include button-blue-bg;
+
   &::after {
     display: none;
   }

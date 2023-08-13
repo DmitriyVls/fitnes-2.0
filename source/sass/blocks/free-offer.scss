@@ -70,6 +70,8 @@
   max-width: 410px;
   width: 100%;
   border-width: 3px;
+
+  @include button-dark-bg;
 }
 
 //TABLET

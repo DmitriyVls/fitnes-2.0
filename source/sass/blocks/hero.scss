@@ -63,6 +63,8 @@
 .hero__button {
   width: 230px;
   margin-top: 45px;
+
+  @include button-dark-bg;
 }
 
 //TABLET

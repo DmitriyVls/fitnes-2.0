@@ -40,6 +40,8 @@
   display: block;
   text-align: center;
   border-width: 2px;
+
+  @include button-dark-bg;
 }
 
 .promo__text-wrapper {

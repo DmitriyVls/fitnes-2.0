@@ -43,12 +43,18 @@
   letter-spacing: 0.05em;
   color: $color-default-white;
   border-bottom: 1px solid $color-default-white;
+
+  @include link-dark;
 }
 
 //TABLET
 @media (max-width: $vp-1199) {
   .main-promotion {
     max-width: 100%;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row: -1/1;
+    margin-bottom: 30px;
   }
 
   .main-promotion__description {

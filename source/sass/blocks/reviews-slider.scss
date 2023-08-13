@@ -5,10 +5,6 @@
   margin-top: 45px;
 }
 
-.reviews__title {
-  text-align: center;
-}
-
 .reviews-slider__item {
   display: grid;
   max-width: 560px;
@@ -25,15 +21,16 @@
   border-radius: 100%;
 }
 
-.reviews-slider__bold-text {
+.reviews-slider h3 {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 30px;
   color: $color-default-white;
+  margin: 0;
 }
 
-.reviews-slider__text {
+.reviews-slider p {
   grid-column-start: 2;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 16px;
@@ -68,12 +65,12 @@
     grid-template-columns: 80px 50%;
   }
 
-  .reviews-slider__bold-text {
+  .reviews-slider h3 {
     max-width: 62px;
     margin-left: 15px;
   }
 
-  .reviews-slider__text {
+  .reviews-slider p {
     padding-top: 15px;
     grid-column-start: 1;
     grid-column-end: -1;

@@ -37,6 +37,8 @@
   padding-bottom: 5px;
   border-bottom: 1px solid $color-sapphire;
   color: $color-sapphire;
+
+  @include link-white;
 }
 
 //TABLET
