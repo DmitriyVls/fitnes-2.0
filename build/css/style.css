@@ -1162,14 +1162,14 @@ button.swiper-pagination-bullet {
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: local("Alumni Sans"), url("/fonts/AlumniSans/AlumniSans-SemiBold.woff2") format("woff2");
+  src: local("Alumni Sans"), url("../fonts/AlumniSans/AlumniSans-SemiBold.woff2") format("woff2");
 }
 @font-face {
   font-family: "Alumni Sans";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: local("Alumni Sans"), url("/fonts/AlumniSans/AlumniSans-Bold.woff2") format("woff2");
+  src: local("Alumni Sans"), url("../fonts/AlumniSans/AlumniSans-Bold.woff2") format("woff2");
 }
 @font-face {
   font-family: "Roboto Condensed";
