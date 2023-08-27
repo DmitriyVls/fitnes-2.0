@@ -113,7 +113,14 @@
   }
 
   .promo__description {
+    width: 100%;
+    margin: 0;
+    padding-left: 0;
     padding-bottom: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .promo h2 {
@@ -121,5 +128,14 @@
     font-weight: 600;
     line-height: 46px;
     letter-spacing: 0.03em;
+  }
+
+  .promo__picture {
+    width: 100%;
+    min-height: 290px;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
   }
 }

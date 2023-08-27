@@ -144,18 +144,19 @@
     line-height: 38px;
   }
 
-  .trainers__container {
-    max-width: 226px;
-    margin: 0 auto;
-  }
-
   .trainers__item {
     margin-right: 0;
+    width: 100%;
   }
 
   .trainers__link {
-    max-width: 226px;
+    width: calc(100% - 30%);
     min-height: 274px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
   }
 
   .trainers__text-bold-inner {
@@ -164,7 +165,11 @@
   }
 
   .trainers__picture {
+    width: 100%;
+
     img {
+      width: 100%;
+      object-fit: cover;
       min-height: 274px;
     }
   }

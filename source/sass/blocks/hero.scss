@@ -32,7 +32,7 @@
 .hero h1 {
   max-width: 270px;
   font-size: 92px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 110px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -61,7 +61,8 @@
 }
 
 .hero__button {
-  width: 230px;
+  width: 100%;
+  max-width: 450px;
   margin-top: 45px;
 
   @include button-dark-bg;

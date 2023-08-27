@@ -6,6 +6,7 @@
   left: 55%;
   transform: translate(-55%, -75%);
   background-image: url("../img/jpeg/video-preview.jpg");
+  background-size: cover;
 }
 
 .video__wrapper {
@@ -70,7 +71,7 @@
 
 @media (max-width: $vp-767) {
   .video {
-    width: 320px;
+    width: 100%;
     margin: 0 auto;
     position: static;
     transform: translate(0, 0);
@@ -80,6 +81,6 @@
   }
 
   .video__wrapper {
-    width: 320px;
+    width: 100%;
   }
 }

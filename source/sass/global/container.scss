@@ -15,7 +15,7 @@
 
 @media (max-width: $vp-767) {
   .container {
-    max-width: 290px;
+    max-width: calc(100% - 30px);
     padding: 70px 0;
     margin: 0 auto;
   }
