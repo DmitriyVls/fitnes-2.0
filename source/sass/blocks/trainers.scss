@@ -132,6 +132,10 @@
 }
 
 @media (max-width: $vp-767) {
+  .trainers__slider {
+    max-width: 560px;
+  }
+
   .trainers__wrapper {
     margin: 0 auto;
     padding: 0;

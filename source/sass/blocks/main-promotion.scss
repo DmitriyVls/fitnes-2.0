@@ -84,5 +84,12 @@
   .main-promotion__description {
     padding-bottom: 20px;
   }
+
+  .main-promotion__picture {
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
 }
 //MODILE

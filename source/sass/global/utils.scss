@@ -2,6 +2,10 @@ body {
   font-family: "Alumni Sans", "Arial", sans-serif;
 }
 
+img {
+  background-color: $color-default-white;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
